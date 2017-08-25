@@ -1,14 +1,6 @@
-openprescribing/data/raw_data
-openprescribing/media/js/archive
-openprescribing/media/js/node_modules
-openprescribing/static/js/*js
-openprescribing/static/css/index.css
-openprescribing/assets
-analysis/
-docs/
-cache-warming/
-vendor/
-_site/
+vendor
+_site
+.sass-cache
 # System files
 *.py[co]
 *.egg*
