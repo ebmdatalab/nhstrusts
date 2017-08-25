@@ -30,7 +30,12 @@ module Jekyll
         raw_data = Hash.new([])
         scores_data = Hash.new([])
         site.data['hospitality-coi-raw'].each do |datum|
-          datum['figshare_id'] = datum['doi'][/figshare\.(\d+)$/,1]
+          if datum['doi']
+            figshare_id = datum['doi'][/figshare\.(\d+)$/,1]
+          else
+            figshare_id = '1'
+          end
+          datum['figshare_id'] = figshare_id
           raw_data[datum['org_code']] = datum
         end
         site.data['hospitality-coi-scores'].each do |datum|
