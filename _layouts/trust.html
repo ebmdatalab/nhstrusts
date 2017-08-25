@@ -12,6 +12,14 @@ layout: default
         <h1 class="dark-header__company-name">
           {{ page.trust['name'] }}
         </h1>
+        <p class="dark-header__subhead">
+          {{ page.trust['addr1'] }},
+          {{ page.trust['addr2'] }},
+          {{ page.trust['addr3'] }},
+          {{ page.trust['city'] }},
+          {{ page.trust['county'] }},
+          {{ page.trust['postcode'] }}
+        </p>
       </div>
       <div class="dark-header__search search-block search-block--dark">
         <form class="search-block__form">
@@ -75,20 +83,7 @@ layout: default
               Transparency rank
             </p>
             <p class="metric__value">
-              {{ page.scores['rank'] }}
-            </p>
-          </div>
-          <div class="metrics__metric metric--known-for">
-            <p class="metric__label">
-              Address
-            </p>
-            <p class="metric__value--known-for">
-              {{ page.trust['addr1'] }},
-              {{ page.trust['addr2'] }},
-              {{ page.trust['addr3'] }},
-              {{ page.trust['city'] }},
-              {{ page.trust['county'] }},
-              {{ page.trust['postcode'] }}
+              {{ page.scores['rank']|ordinal }}
             </p>
           </div>
         </div>
@@ -112,9 +107,15 @@ layout: default
 
   <div class="company-body">
     <div class="container" id="js-company-tabs">
+      <div id="sources" class="company-body__tabs__item">
+        <h2 class="hide-if-javascript">Sources</h2>
+        <p>This is the original documentation we got back from the organisation in response to our FOI request.</p>
+        <!-- you can extract the ID from the DOI -->
+        <iframe src="https://widgets.figshare.com/articles/{{page.raw_data.figshare_id}}/embed?show_title=1" width="568" height="351" frameborder="0"></iframe>
+      </div>
       <div id="data" class="company-body__tabs__item">
         <h2 class="hide-if-javascript">Questions and answers</h2>
-        <p>Stuff here</p>
+        <p>Here is all the structured data we extracted from the organisation's response to our FOI request, if any.</p>
         <dl class="results-breakdown">
           {% for q in page.raw_data_questions %}
            {% assign qid = q[0] %}
@@ -125,13 +126,7 @@ layout: default
           {% endfor %}
         </dl>
       </div>
-      <div id="sources" class="company-body__tabs__item">
-        <h2 class="hide-if-javascript">Sources</h2>
-        <p>These are the responses we got from the organisation</p>
-        <!-- you can extract the ID from the DOI -->
-        <iframe src="https://widgets.figshare.com/articles/4968626/embed?show_title=1" width="568" height="351" frameborder="0"></iframe>
-      </div>
-    </div>
+   </div>
   </div>
 </div>
 

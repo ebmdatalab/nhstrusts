@@ -30,6 +30,7 @@ module Jekyll
         raw_data = Hash.new([])
         scores_data = Hash.new([])
         site.data['hospitality-coi-raw'].each do |datum|
+          datum['figshare_id'] = datum['doi'][/figshare\.(\d+)$/,1]
           raw_data[datum['org_code']] = datum
         end
         site.data['hospitality-coi-scores'].each do |datum|
@@ -38,7 +39,6 @@ module Jekyll
 
         # Generate a page for each trust
         site.data['trusts'].each do |trust|
-          puts "++++" + trust['org_code']
           site.pages << TrustPage.new(site, site.source, trust, raw_data[trust['org_code']], scores_data[trust['org_code']])
         end
       end
