@@ -102,34 +102,16 @@
             .attrTween('d', tweenPie);
 
         // Add the title
-        if (titleStyle === TITLE_STYLE_TOTAL) {
-          svg.append('text')
-              .attr('text-anchor', 'middle')
-              .attr('dy', '-1.1em')
-              .attr('class', 'donut__label donut__label--' + TITLE_STYLE_TOTAL)
-              .text('TOTAL');
-          svg.append('text')
-             .attr('text-anchor', 'middle')
-             .attr('dy', '0.6em')
-             .attr('class', 'donut__value donut__value--' + TITLE_STYLE_TOTAL)
-             .text(total);
-        }
-        else if (titleStyle === TITLE_STYLE_XOFY) {
-          // Add a group to make positioning the text easier
-          var textGroup = svg.append('g');
-          textGroup.append('text')
-              .attr('text-anchor', 'middle')
-              .attr('dx', '0')
-              .attr('dy', '0')
-              .attr('class', 'donut__value donut__value--' + TITLE_STYLE_XOFY)
-              .text(total);
-          textGroup.append('text')
-              .attr('text-anchor', 'middle')
-              .attr('dx', '0')
-              .attr('dy', '1.5em')
-              .attr('class', 'donut__label donut__label--' + TITLE_STYLE_XOFY)
-              .text(' out of ' + maximumPossible);
-        }
+        svg.append('text')
+          .attr('text-anchor', 'middle')
+          .attr('dy', '-1.1em')
+          .attr('class', 'donut__label donut__label--' + TITLE_STYLE_TOTAL)
+          .text('TOTAL');
+        svg.append('text')
+          .attr('text-anchor', 'middle')
+          .attr('dy', '0.6em')
+          .attr('class', 'donut__value donut__value--' + TITLE_STYLE_TOTAL)
+          .text(total + "%");
       });
     }
 

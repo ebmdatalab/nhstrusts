@@ -7,8 +7,8 @@ layout: default
 <div class="dark-header">
   <div class="container">
     <div class="dark-header__title-area dark-header__title-area--full-width">
-      <h1 class="dark-header__main-title">+AllTrials <i>Transparency Index</i></h1>
-      <p class="dark-header__subhead">Ranking the world’s biggest pharmaceutical companies by their policies on clinical trials transparency</p>
+      <h1 class="dark-header__main-title">NHS Trusts <i>Conflict of Interests Index</i></h1>
+      <p class="dark-header__subhead">Ranking NHS England Trusts by their conflict of interest policies</p>
     </div>
   </div>
 </div>
@@ -18,19 +18,17 @@ layout: default
   <div class="container">
     <h2>About this site</h2>
     <div class="home-about-this-site__two-column-content">
-      <p>In medicine we use the results of clinical trials to make informed treatments about which treatments work best. But there is a problem: the results of clinical trials are being routinely and legally withheld from doctors, researchers, and patients. This is a problem for industry sponsored trials, and for trials funded by governments and charities.</p>
-      <p> We have ranked all the world’s major drug companies, and a selection of smaller firms, by the commitments they make to clinical trials transparency.  Next, we will be ranking the policies of non-industry trial funders. You can find out more about unreported clinical trials at <a href="http://alltrials.net/">AllTrials.net</a>.</p>
+      <p>We did a paper about conflict of interest. This is the data.</p>
     </div>
-    <p><a href="http://www.alltrials.net/contact/" class="contact-us-button">Contact us</a></p>
   </div>
 </div>
 <div class="transparency-ranking">
   <div class="container">
-    <h2>Company ranking</h2>
+    <h2>Trust ranking</h2>
     <div class="search-block search-block__table-search">
       <form class="search-block__form">
-        <label class="search-block__label" for="q">Find a company</label>
-        <input type="text" placeholder="Eg. Pfizer, Inc" class="search-block__text-input" name="q" id="q">
+        <label class="search-block__label" for="q">Find a Trust</label>
+        <input type="text" placeholder="E.g. Isle Of Wight NHS Trust" class="search-block__text-input" name="q" id="q">
         <input type="submit" value="Search" class="search-block__submit" />
       </form>
     </div>
@@ -48,38 +46,38 @@ layout: default
           <tr>
             <td class="transparency-ranking__table__rank">{{ trust["rank"] }}</td>
             <td class="transparency-ranking__table__name">
-              <a href="companies/{{ trust["trust_name"] | slugify }}.html">
+              <a href="trusts/{{ trust["trust_name"] | slugify }}.html">
                 {{ trust["trust_name"] }}
               </a>
             </td>
-            <td class="transparency-ranking__table__score">{{ trust["total_score"] | round }}</td>
+            <td class="transparency-ranking__table__score">{{ trust["total_score"] | times:20 }}%</td>
             <td class="transparency-ranking__table__chart">
               <div class="barchart barchart--simple">
                 <div class="barchart__draw">
                   <span class="barchart__value barchart__value--ontime"
                         title="Responded on time? {{ trust['responded_on_time']|yesno }}"
                         style="width: {{ trust["responded_on_time"]|times:20 }}%">
-                    Responded on time: {{ trust["responded_on_time"] | round }}%
+                    Responded on time: {{ trust["responded_on_time"] | times:20 }}%
                   </span>
                   <span class="barchart__value barchart__value--register"
                         title="Sent a register? {{ trust['sent_a_register']|yesno }}"
                         style="width: {{ trust["sent_a_register"]|times:20 }}%">
-                    Sent a register: {{ trust["sent_a_register"] | round }}%
+                    Sent a register: {{ trust["sent_a_register"] | times:20 }}%
                   </span>
                   <span class="barchart__value barchart__value--structure"
                         title="Provided complete data structure? {{ trust['complete_data_structure']|yesno }}"
                         style="width: {{ trust["complete_data_structure"]|times:20 }}%">
-                    Complete data structure: {{ trust["complete_data_structure"] | round }}%
+                    Complete data structure: {{ trust["complete_data_structure"] | times:20 }}%
                   </span>
                   <span class="barchart__value barchart__value--public"
                         title="Publicly accessible? {{ trust['publically_accessible']|yesno }}"
                         style="width: {{ trust["publically_accessible"]|times:20 }}%">
-                    Publicly accessible: {{ trust["publically_accessible"] | round }}%
+                    Publicly accessible: {{ trust["publically_accessible"] | times:20 }}%
                   </span>
                   <span class="barchart__value barchart__value--reusable"
                         title="Resuable format? {{ trust['reusable_format']|yesno }}"
                         style="width: {{ trust['reusable_format']|times:20 }}%">
-                    Reusable format: {{ trust['reusable_format'] | round }}%
+                    Reusable format: {{ trust['reusable_format'] | times:20 }}%
                   </span>
                 </div>
               </div>

@@ -31,6 +31,9 @@
 .category_4 {
   fill: $colour_orange;
 }
+.category_5 {
+  fill: $colour_yellow;
+}
 .category_empty {
   fill: $colour_off_white;
 }
@@ -71,17 +74,20 @@
   overflow: visible;
 }
 
-.barchart__value--registration {
+.barchart__value--ontime {
   background-color: $colour_red;
 }
-.barchart__value--summary-results {
+.barchart__value--register {
   background-color: $colour_green;
 }
-.barchart__value--clinical-study-reports {
+.barchart__value--structure {
   background-color: $colour_blue;
 }
-.barchart__value--individual-patient-data {
+.barchart__value--public {
   background-color: $colour_orange;
+}
+.barchart__value--reusable {
+  background-color: $colour_yellow;
 }
 
 // Kernel density diagram

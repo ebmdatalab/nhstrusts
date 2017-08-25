@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+        <!DOCTYPE html>
 <html class="no-js">
 
   {% include head.html %}
@@ -17,9 +17,16 @@
     {% include header.html %}
     {{ content }}
     {% include footer.html %}
-
+    <script>
+      var AllTrials = window.AllTrials || {};
+      AllTrials.trusts = {{ site.data.trusts | jsonify }};
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
     <script src="{{ site.baseurl }}/assets/js/awesomplete.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/d3.donut-chart.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/search-autocomplete.js"></script>
     <script src="{{ site.baseurl }}/assets/js/company-tabs.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/company-donut-charts.js"></script>
 
   </body>
 

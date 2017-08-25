@@ -27,8 +27,72 @@ layout: default
   <div class="company-body company-body--intro">
     <div class="container">
 
-
+      <div class="company-body__section-one">
+        <div class="chart-test">
+        </div>
+        <div class="score-breakdown">
+          <div class="barchart barchart--simple">
+            <span class="barchart__label">Responded on time</span>
+            <span class="barchart__text-value"><strong>{{ page.scores['responded_on_time']|yesno }}</strong></span>
+            <div class="barchart__draw">
+              <span class="barchart__value barchart__value--ontime" style="width: 100%"></span>
+            </div>
+          </div>
+          <div class="barchart barchart--simple">
+            <span class="barchart__label">Sent a register</span>
+            <span class="barchart__text-value"><strong>{{ page.scores['sent_a_register']|yesno }}</strong></span>
+            <div class="barchart__draw">
+              <span class="barchart__value barchart__value--register" style="width: 100%"></span>
+            </div>
+          </div>
+          <div class="barchart barchart--simple">
+            <span class="barchart__label">Complete data structure</span>
+            <span class="barchart__text-value"><strong>{{ page.scores['complete_data_structure']|yesno }}</strong></span>
+            <div class="barchart__draw">
+              <span class="barchart__value barchart__value--structure" style="width: 100%"></span>
+            </div>
+          </div>
+          <div class="barchart barchart--simple">
+            <span class="barchart__label">Publicly acccessible</span>
+            <span class="barchart__text-value"><strong>{{ page.scores['publically_accessible']|yesno }}</strong></span>
+            <div class="barchart__draw">
+              <span class="barchart__value  barchart__value--public" style="width: 100%"></span>
+            </div>
+          </div>
+          <div class="barchart barchart--simple">
+            <span class="barchart__label">Reusable format</span>
+            <span class="barchart__text-value"><strong>{{ page.scores['reusable_format']|yesno }}</strong></span>
+            <div class="barchart__draw">
+              <span class="barchart__value  barchart__value--reusable" style="width: 100%"></span>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="company-body__section-two">
+        <div class="company-body__metrics">
+          <div class="metrics__metric metric--transparency">
+            <p class="metric__label">
+              Transparency rank
+            </p>
+            <p class="metric__value">
+              {{ page.scores['rank'] }}
+            </p>
+          </div>
+          <div class="metrics__metric metric--known-for">
+            <p class="metric__label">
+              Address
+            </p>
+            <p class="metric__value--known-for">
+              {{ page.trust['addr1'] }},
+              {{ page.trust['addr2'] }},
+              {{ page.trust['addr3'] }},
+              {{ page.trust['city'] }},
+              {{ page.trust['county'] }},
+              {{ page.trust['postcode'] }}
+            </p>
+          </div>
+        </div>
+
         <p class="intro">Executive summary Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a fringilla dui. Pellentesque ullamcorper, nisl at viverra luctus, mauris arcu maximus mi, et ullamcorper libero elit id tellus. </p>
       </div>
 
@@ -39,8 +103,8 @@ layout: default
     <div class="container">
       <div class="tabs">
         <ul>
-            <li><a href="#data">Questions and answers</a></li>
-            <li><a href="#sources">Sources</a></li>
+            <li><a href="#sources">Original source document</a></li>
+            <li><a href="#data">Extracted information</a></li>
         </ul>
       </div>
     </div>
@@ -53,9 +117,11 @@ layout: default
         <p>Stuff here</p>
         <dl class="results-breakdown">
           {% for q in page.raw_data_questions %}
-          {% assign qid = q[0] %}
-          <dt>{{ q[1] }}</dt>
-          <dd>{{ page.raw_data[qid] }}</dd>
+           {% assign qid = q[0] %}
+           {% if qid != 'number' and qid != 'trust' %}
+            <dt>{{ q[1] }}</dt>
+            <dd>{{ page.raw_data[qid]|yesno }}</dd>
+           {% endif %}
           {% endfor %}
         </dl>
       </div>
@@ -71,5 +137,5 @@ layout: default
 
 <script>
   var AllTrials = window.AllTrials || {};
-  AllTrials.trust = {{ page.trust | jsonify }};
+  AllTrials.trust = {{ page.scores | jsonify }};
 </script>

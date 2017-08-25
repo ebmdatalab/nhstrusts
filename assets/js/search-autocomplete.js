@@ -9,18 +9,18 @@
       .replace(/-+$/, '');            // Trim - from end of text
   }
   $(function() {
-    var companyNames = AllTrials.companies.map(function(company) {
-      return company['Company name'];
+    var trustNames = AllTrials.trusts.map(function(trust) {
+      return trust['name'];
     });
     var $input = $('.search-block__text-input');
     new Awesomplete($input[0], {
-      list: companyNames,
+      list: trustNames,
       minChars: 1
     });
 
     $input.on('awesomplete-selectcomplete', function() {
       var name = $input.val();
-      window.location.href = '/companies/' + slugify(name) + '.html';
+      window.location.href = '/trusts/' + slugify(name) + '.html';
     });
   });
 })(window.jQuery, window.Awesomplete, window.AllTrials);
