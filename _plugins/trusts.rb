@@ -3,7 +3,7 @@ module Jekyll
 
   # Define a new type of page for companies
   class TrustPage < Page
-    def initialize(site, base, trust, hospitality)
+    def initialize(site, base, trust, raw_data, scores)
       trust_slug = Jekyll::Utils::slugify(trust['name'])
       @site = site
       @base = base
@@ -14,8 +14,9 @@ module Jekyll
       self.read_yaml(File.join(base, '_layouts'), 'trust.html')
       self.data['trust'] = trust
       self.data['title'] = trust['name']
-      self.data['hospitality'] = hospitality
-      self.data['questions'] = site.data['hospitality-coi-questions'][0]
+      self.data['raw_data'] = raw_data
+      self.data['scores'] = scores
+      self.data['raw_data_questions'] = site.data['hospitality-coi-questions'][0]
     end
   end
 
@@ -24,15 +25,21 @@ module Jekyll
 
     def generate(site)
       if site.layouts.key? 'trust'
-        hospitality = Hash.new([])
-        site.data['hospitality-coi'].each do |datum|
-          hospitality[datum['number'].to_i] = datum
-          puts "---- #{hospitality}"
+
+        # Make lookup tables by org_code for the answers data
+        raw_data = Hash.new([])
+        scores_data = Hash.new([])
+        site.data['hospitality-coi-raw'].each do |datum|
+          raw_data[datum['org_code']] = datum
+        end
+        site.data['hospitality-coi-scores'].each do |datum|
+          scores_data[datum['org_code']] = datum
         end
 
+        # Generate a page for each trust
         site.data['trusts'].each do |trust|
-          puts "++++" + trust['id']
-          site.pages << TrustPage.new(site, site.source, trust, hospitality[trust['id'].to_i])
+          puts "++++" + trust['org_code']
+          site.pages << TrustPage.new(site, site.source, trust, raw_data[trust['org_code']], scores_data[trust['org_code']])
         end
       end
     end

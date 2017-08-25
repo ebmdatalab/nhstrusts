@@ -52,10 +52,10 @@ layout: default
         <h2 class="hide-if-javascript">Questions and answers</h2>
         <p>Stuff here</p>
         <dl class="results-breakdown">
-          {% for q in page.questions %}
+          {% for q in page.raw_data_questions %}
           {% assign qid = q[0] %}
           <dt>{{ q[1] }}</dt>
-          <dd>{{ page.hospitality[qid] }}</dd>
+          <dd>{{ page.raw_data[qid] }}</dd>
           {% endfor %}
         </dl>
       </div>
