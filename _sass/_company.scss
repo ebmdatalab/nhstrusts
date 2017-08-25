@@ -1,0 +1,235 @@
+.company-body {
+  @include clearfix;
+  padding: 3em 0;
+  p {
+    max-width: 41em;
+  }
+}
+
+.company-body__section-one {
+  @media (min-width: $large_screen) {
+    width: 16.666666667%;
+    margin-right: 8.333333333%;
+    float: left;
+  }
+}
+
+.company-body__section-two {
+  @media (min-width: $large_screen) {
+    width: 75%;
+    float: left;
+  }
+}
+
+.company-body__highlights {
+  @include unstyled-list;
+}
+
+.company-body__highlights__item {
+  margin-bottom: 0.33em;
+}
+
+.company-body__highlights__item--positive {
+  @include quality-icon($type: positive);
+}
+
+.company-body__highlights__item--negative {
+  @include quality-icon($type: negative);
+}
+
+.company-body__highlights__item--top {
+  @include quality-icon($type: star);
+}
+
+/* List of results, either positive or negative */
+.results-breakdown {
+  @include unstyled-list;
+}
+
+.results-breakdown__item {
+  border-bottom: 1px solid $colour_borders;
+  padding: 0.666em 0;
+}
+
+.results-breakdown__item--positive {
+  @include quality-icon($type: positive);
+}
+
+.results-breakdown__item--negative {
+  @include quality-icon($type: negative);
+}
+
+.company-body__tabs {
+  border-bottom: 1px solid $colour_borders;
+}
+
+.company-body__tabs__item {
+  margin-bottom: 5em;
+  @include clearfix;
+  .js & {
+    margin-bottom: 0;
+  }
+}
+
+.tabs {
+  ul {
+    @include unstyled-list;
+    @media (min-width: $medium_screen) {
+      @include inline-list;
+    }
+  }
+  li {
+    width: 100%;
+    @media (min-width: $medium_screen) {
+      width: auto;
+    }
+  }
+  a {
+    width: 100%;
+    background-color: $colour_off_white;
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    color: $colour_black;
+    border: 1px solid $colour_borders;
+    border-bottom: 0;
+    font-size: 0.882352941em;
+    position: relative;
+    top: 1px;
+    @media (min-width: $medium_screen) {
+      border-bottom: 1px solid $colour_borders;
+      padding: 0.75em 1em;
+      font-size: 0.764705882em;
+    }
+    @media (min-width: $giant_screen) {
+      font-size: 0.882352941em;
+      padding: 0.75em 2em;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $colour_light_grey;
+      border-color: $colour_grey;
+      border-bottom-color: $colour_borders;
+    }
+  }
+  .active {
+    a {
+      background-color: $colour_white;
+      border-color: $colour_borders;
+      border-bottom-color: $colour_white;
+    }
+  }
+}
+
+.chart-test,
+.chart-test-2,
+.chart-test-3,
+.chart-test-4,
+.chart-test-5 {
+  height: 190px;
+}
+
+.score-breakdown {
+  margin-top: 1em;
+}
+
+.company-body__metrics {
+  border-bottom: 1px solid $colour_borders;
+  margin-bottom: 1.5em;
+  @include clearfix;
+}
+
+.metric--transparency {
+  width: 50%;
+  float: left;
+  @media (min-width: $large_screen) {
+    width: 20%;
+  }
+}
+
+.metric--market-cap {
+  width: 50%;
+  float: left;
+  @media (min-width: $large_screen) {
+    width: 20%;
+  }
+}
+
+.metric--known-for {
+  width: 100%;
+  float: left;
+  @media (min-width: $large_screen) {
+    width: 60%;
+  }
+}
+
+.metric__label {
+  font-size: 0.764705882em;
+  margin-bottom: 0;
+}
+
+.metric__value {
+  font-size: 1.235294118em;
+  font-weight: $body-typeface-bold;
+}
+
+.metric-value--known-for {
+  font-size: 0.882352941em;
+}
+
+.rank-badge {
+  text-align: center;
+  padding: 0.75em;
+  background-color: $colour_off_white;
+  max-width: 9em;
+  margin: 2em auto 0;
+  p {
+    margin-bottom: 0;
+    color: $colour_dark_grey;
+  }
+  strong {
+    color: $colour_red;
+  }
+}
+
+.rank-badge--registration {
+  strong {
+    color: $colour_red;
+  }
+}
+
+.rank-badge--summary-results {
+  strong {
+    color: $colour_green;
+  }
+}
+
+.rank-badge--clinical-study-reports {
+  strong {
+    color: $colour_blue;
+  }
+}
+
+.rank-badge--individual-patient-data {
+  strong {
+    color: $colour_orange;
+  }
+}
+
+.results-breakdown {
+  margin-top: 2em;
+
+  dd,dt {
+    padding: 0.5em 1em;
+    border: 1px solid $colour_light_grey;
+    font-size: 0.882352941em; //15px
+  }
+  dt {
+    margin-top: 1.5em;
+    border-bottom: 0;
+    background-color: $colour_off_white;
+  }
+  dd {
+    margin-left: 0;
+  }
+}

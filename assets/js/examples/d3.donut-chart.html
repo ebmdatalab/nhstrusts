@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Donut Chart</title>
+  <style>
+
+    body {
+      font: 10px sans-serif;
+    }
+
+    .chart-test {
+      width: 200px;
+      height: 200px;
+    }
+
+    /* Specifying the svg tag here helps make it clearer that it quasi-CSS we're
+       using to deal with SVG inconsistencies like fill vs color. */
+    svg .arc path {
+      stroke: #fff;
+    }
+
+    svg .category_1 {
+      fill: #E53C42;
+    }
+    svg .category_2 {
+      fill: #69B865;
+    }
+    svg .category_3 {
+      fill: #5FC2D3;
+    }
+    svg .category_4 {
+      fill: #E7A860;
+    }
+    svg .category_empty {
+      fill: #EEE;
+    }
+
+    svg .donut__label {
+      font-size: 1.75em;
+      fill: #AAA;
+    }
+    svg .donut__value {
+      font-size: 4em;
+      fill: #333;
+    }
+    svg .donut__label--total {
+      font-size: 1.75em;
+    }
+    svg .donut__value--total {
+      font-size: 4em;
+    }
+
+    svg .donut__value--xofy {
+      font-size: 1.5em;
+    }
+  </style>
+</head>
+<body>
+  <div class="chart-test">&nbsp;</div>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+  <script>window.AllTrials = window.AllTrials || {}</script>
+  <script src="../d3.donut-chart.js"></script>
+  <script>
+    $(function() {
+      // Sample data, random numbers in 4 categories from 0-500
+      var data = [
+        {category: 1, score: 500},
+        // {category: 2, score: 267},
+        // {category: 3, score: 56},
+        // {category: 4, score: 300}
+      ];
+
+      // Make the chart generating function and set it up
+      var chart = AllTrials.donutChart();
+      chart = chart
+          .titleStyle(chart.TITLE_STYLE_XOFY)
+          .maximumPossible(500);
+
+      // Draw a chart in the body of the supplied data
+      d3.select(".chart-test")
+        .datum(data)
+        .call(chart);
+    });
+  </script>
+</body>
+</html>

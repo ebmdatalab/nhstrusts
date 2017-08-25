@@ -1,0 +1,211 @@
+---
+layout: default
+---
+<div class="company">
+
+  <div class="dark-header">
+    <div class="container">
+      <div class="dark-header__title-area">
+        <p class="dark-header__subhead">
+          How transparent are {{ page.company['publisher_1'] }}&rsquo;s clinical trials?
+        </p>
+        <h1 class="dark-header__company-name">
+          {{ page.company['publisher_1'] }}
+        </h1>
+      </div>
+      <div class="dark-header__search search-block search-block--dark">
+        <form class="search-block__form">
+          <label class="search-block__label" for="q">Find a company</label>
+          <input type="text" placeholder="Eg. Pfizer, Inc" class="search-block__text-input" name="q" id="q">
+          <input type="submit" value="Search" class="search-block__submit" />
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="company-body company-body--intro">
+    <div class="container">
+
+      <div class="company-body__section-one">
+        <div class="chart-test">
+        </div>
+        <div class="score-breakdown">
+          <div class="barchart barchart--simple">
+            <span class="barchart__label">Registration</span>
+            <span class="barchart__text-value"><strong>{{ page.company['registration'] | round }}</strong>/500</span>
+            <div class="barchart__draw">
+              <span class="barchart__value barchart__value--registration" style="width: {{ page.company['registration_percentage'] | round }}%">({{ page.company['registration_percentage'] | round }}%)</span>
+            </div>
+          </div>
+          <div class="barchart barchart--simple barchart">
+            <span class="barchart__label">Summary results</span>
+            <span class="barchart__text-value"><strong>{{ page.company['results'] | round }}</strong>/500</span>
+            <div class="barchart__draw">
+              <span class="barchart__value barchart__value--summary-results" style="width: {{ page.company['results_percentage'] | round }}%">({{ page.company['results_percentage'] | round }}%)</span>
+            </div>
+          </div>
+          <div class="barchart barchart--simple">
+            <span class="barchart__label">Clinical study reports</span>
+            <span class="barchart__text-value"><strong>{{ page.company['csrs'] | round }}</strong>/500</span>
+            <div class="barchart__draw">
+              <span class="barchart__value barchart__value--clinical-study-reports" style="width: {{ page.company['csrs_percentage'] | round }}%">({{ page.company['csrs_percentage'] | round }}%)</span>
+            </div>
+          </div>
+          <div class="barchart barchart--simple">
+            <span class="barchart__label">Individual patient data</span>
+            <span class="barchart__text-value"><strong>{{ page.company['ipd'] | round }}</strong>/500</span>
+            <div class="barchart__draw">
+              <span class="barchart__value  barchart__value--individual-patient-data" style="width: {{ page.company['ipd_percentage'] | round }}%">({{ page.company['ipd_percentage'] | round }}%)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="company-body__section-two">
+        <div class="company-body__metrics">
+          <div class="metrics__metric metric--transparency">
+            <p class="metric__label">Transparency rank</p>
+            <p class="metric__value">{{ page.company['total_rank'] | ordinal }}</p>
+          </div>
+          <div class="metrics__metric metric--market-cap">
+            <p class="metric__label">Est. sales (USD)</p>
+            <p class="metric__value">{{ page.company['publisher_2'] }}</p>
+          </div>
+          <div class="metrics__metric metric--known-for">
+            <p class="metric__label">Known for</p>
+            <p class="metric__value--known-for">
+              {{ page.company['publisher_3'] }}
+            </p>
+          </div>
+        </div>
+        <p class="intro">
+        The results of clinical trials are routinely and legally withheld from doctors, researchers, and patients. We have assessed every company’s policy on clinical trials transparency to see whether they meet a series of standard transparency criteria, and checked our findings with the companies. We have then applied a score to each commitment, and used these to rank the companies. You can see all our raw data, and review our methods, on this site.
+        </p>
+
+        <p class="intro">
+          Below, you can read in more detail about the specific commitments made by this company on each of the four domains: registration, summary results, CSRs, and IPD.
+        </p>
+      </div>
+
+    </div>
+  </div>
+  <div class="company-body__tabs hide-if-no-javascript">
+    <div class="container">
+      <div class="tabs">
+        <ul>
+            <li><a href="#registration">Registration</a></li>
+            <li><a href="#summary-results">Summary results</a></li>
+            <li><a href="#clinical-study-reports">Clinical study reports</a></li>
+            <li><a href="#individual-patient-data">Individual patient data</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="company-body">
+    <div class="container" id="js-company-tabs">
+
+      <div id="registration" class="company-body__tabs__item">
+        <div class="company-body__section-one">
+            <div class="chart-test-2">
+            </div>
+            <div class="rank-badge rank-badge--registration">
+              <p><strong>{{ page.company['registration_rank'] }}</strong> out of 46</p>
+            </div>
+        </div>
+        <div class="company-body__section-two">
+          <h2 class="hide-if-javascript">Registration</h2>
+          <h3>Why Registration is important</h3>
+          <p class="intro">Before a trial is started, it should be “registered”: a description of the trial is posted on a publicly accessible trial registry, recognised by the World Health Organisation. This means that everyone knows the trial is happening, and will know if it is left unreported. It also helps readers detect if the trial has been designed, analysed, and reported correctly.  This graph shows how {{ page.company['publisher_1'] }}&rsquo;s policy on registration compares to others&rsquo;.</p>
+          <div class="stacked-bar-chart stacked-bar-chart--registration" data-section="registration"></div>
+          <h3>Measures</h3>
+          <p>We assess every company’s policy by reading through their commitments, and checking off whether they meet a range of criteria. We send every company our assessment, then apply a scoring system to each element. You can read about the scoring system <a href="{{ "/our-scoring-method/" | relative_url }}">here</a>. You can read our detailed assessment of whether {{ page.company['publisher_1'] }} meets each of our criteria, below.</p>
+          <dl class="results-breakdown">
+            {% for question in page.questions['registration'] %}
+              <dt><code>{{ question['question_id'] }}</code>: {{ question['question_text'] }} </dt>
+              <dd>{{ page.company[question['question_id']] | capitalize }}</dd>
+            {% endfor %}
+          </dl>
+        </div>
+      </div>
+      <div id="summary-results" class="company-body__tabs__item">
+        <div class="company-body__section-one">
+          <div class="chart-test-3">
+          </div>
+          <div class="rank-badge rank-badge--summary-results">
+            <p><strong>{{ page.company['results_rank'] }}</strong> out of 46</p>
+          </div>
+        </div>
+        <div class="company-body__section-two">
+          <h2 class="hide-if-javascript">Summary results</h2>
+          <h3>Why summary results are important</h3>
+          <p class="intro">
+            It is important that doctors, researchers, and patients have access to the summary results of every trial. These are the kinds of results you would typically find in an academic journal article: how the people in each arm of the trial did, over the course of the trial, measured by various criteria. This graph shows how {{ page.company['publisher_1'] }}’s policy on sharing summary results compares to others’.
+          </p>
+          <div class="stacked-bar-chart stacked-bar-chart--results" data-section="results"></div>
+          <h3>Measures</h3>
+          <p>We assess every company’s policy by reading through their commitments, and checking off whether they meet a range of criteria. We send every company our assessment, then apply a scoring system to each element. You can read about the scoring system <a href="{{ "/our-scoring-method/" | relative_url }}">here</a>. You can read our detailed assessment of whether {{ page.company['publisher_1'] }} meets each of our criteria, below.</p>
+          <dl class="results-breakdown">
+            {% for question in page.questions['results'] %}
+              <dt><code>{{ question['question_id'] }}</code>: {{ question['question_text'] }}</dt>
+              <dd>{{ page.company[question['question_id']] | capitalize }}</dd>
+            {% endfor %}
+          </dl>
+        </div>
+      </div>
+      <div id="clinical-study-reports" class="company-body__tabs__item">
+        <div class="company-body__section-one">
+          <div class="chart-test-4">
+          </div>
+          <div class="rank-badge rank-badge--clinical-study-reports">
+            <p><strong>{{ page.company['csrs_rank'] }}</strong> out of 46</p>
+          </div>
+        </div>
+        <div class="company-body__section-two">
+          <h2 class="hide-if-javascript">Clinical study reports</h2>
+          <h3>Why Clinical Study Reports are important</h3>
+          <p class="intro">Clinical Study Reports (CSR) are large detailed documents, sometimes thousands of pages long, which contain a wealth of detail on the methods and results of a trial. That information is often missing from other sources: one recent study estimates that CSRs contain twice as much information on benefits and harms as academic papers on trials. CSRs are routinely created for industry trials, but are less well known in the academic community. They follow a standard format set out under international guidance. This graph shows how {{ page.company['publisher_1'] }}’s policy on sharing CSRs compares to others’.</p>
+          <div class="stacked-bar-chart stacked-bar-chart--csrs" data-section="csrs"></div>
+          <h3>Measures</h3>
+          <p>We assess every company’s policy by reading through their commitments, and checking off whether they meet a range of criteria. We send every company our assessment, then apply a scoring system to each element. You can read about the scoring system <a href="{{ "/our-scoring-method/" | relative_url }}">here</a>. You can read our detailed assessment of whether {{ page.company['publisher_1'] }} meets each of our criteria, below.</p>
+          <dl class="results-breakdown">
+            {% for question in page.questions['csrs'] %}
+              <dt><code>{{ question['question_id'] }}</code>: {{ question['question_text'] }}</dt>
+              <dd>{{ page.company[question['question_id']] | capitalize }}</dd>
+            {% endfor %}
+          </dl>
+        </div>
+      </div>
+      <div id="individual-patient-data" class="company-body__tabs__item">
+        <div class="company-body__section-one">
+          <div class="chart-test-5">
+          </div>
+          <div class="rank-badge rank-badge--individual-patient-data">
+            <p><strong>{{ page.company['ipd_rank'] }}</strong> out of 46</p>
+          </div>
+        </div>
+        <div class="company-body__section-two">
+          <h2 class="hide-if-javascript">Individual patient data</h2>
+          <h3>Why Individual Patient Data is important</h3>
+          <p class="intro">Individual Patient Data (IPD) is the raw data collected during a clinical trial, with detailed information on each individual participant. It presents significant opportunities for research. For example, access to IPD can allow third parties to verify that trialists analysed their data correctly and fairly. It helps researchers combine data from lots of trials for more accurate comparisons of treatments. It helps see if a treatment is particularly effective, or unhelpful, in a subset of patients. It also allows entirely new hypotheses to be explored in existing data, helping to devise or refine new treatments. However it also presents a risk: individual patients can often be re-identified, and their privacy compromised, even with partially anonymised data. Because of this, IPD is not generally posted in public, but shared through various controlled access mechanisms, as with other forms of electronic health record data already used by medical researchers. This graph shows how {{ page.company['publisher_1'] }}’s policy on sharing IPD compares to others’.</p>
+          <div class="stacked-bar-chart stacked-bar-chart--ipd" data-section="ipd"></div>
+          <h3>Measures</h3>
+          <p>We assess every company’s policy by reading through their commitments, and checking off whether they meet a range of criteria. We send every company our assessment, then apply a scoring system to each element. You can read about the scoring system <a href="{{ "/our-scoring-method/" | relative_url }}">here</a>. You can read our detailed assessment of whether {{ page.company['publisher_1'] }} meets each of our criteria, below.</p>
+          <dl class="results-breakdown">
+            {% for question in page.questions['ipd'] %}
+              <dt><code>{{ question['question_id'] }}</code>: {{ question['question_text'] }}</dt>
+              <dd>{{ page.company[question['question_id']] | capitalize }}</dd>
+            {% endfor %}
+          </dl>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+  var AllTrials = window.AllTrials || {};
+  AllTrials.company = {{ page.company | jsonify }};
+</script>

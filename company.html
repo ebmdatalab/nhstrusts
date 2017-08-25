@@ -1,0 +1,359 @@
+---
+layout: default
+---
+<script>
+  var AllTrials = window.AllTrials || {};
+  AllTrials.companies = {{ site.data.companies | jsonify }};
+</script>
+<div class="company">
+
+  <div class="dark-header">
+    <div class="container">
+
+      <div class="dark-header__title-area">
+        <p class="dark-header__subhead">How transparent are Pfizer, Inc’s clinical trials?</p>
+        <h1 class="dark-header__company-name">Pfizer, inc</h1>
+      </div>
+      <div class="dark-header__search search-block search-block--dark">
+        <form class="search-block__form">
+          <label class="search-block__label" for="q">Find a company</label>
+          <input type="text" placeholder="Eg. Pfizer, Inc" class="search-block__text-input" name="q" id="q">
+          <input type="submit" value="Search" class="search-block__submit" />
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="company-body company-body--intro">
+    <div class="container">
+
+      <div class="company-body__section-one">
+        <div class="chart-test">
+        </div>
+        <div class="score-breakdown">
+          <div class="barchart barchart--simple">
+            <span class="barchart__label">Registration</span>
+            <span class="barchart__text-value"><strong>250</strong>/500</span>
+            <div class="barchart__draw">
+              <span class="barchart__value barchart__value--registration" style="width: 50%">(50%)</span>
+            </div>
+          </div>
+          <div class="barchart barchart--simple barchart">
+            <span class="barchart__label">Summary results</span>
+            <span class="barchart__text-value"><strong>125</strong>/500</span>
+            <div class="barchart__draw">
+              <span class="barchart__value barchart__value--summary-results" style="width: 25%">(25%)</span>
+            </div>
+          </div>
+          <div class="barchart barchart--simple">
+            <span class="barchart__label">Clinical study reports</span>
+            <span class="barchart__text-value"><strong>250</strong>/500</span>
+            <div class="barchart__draw">
+              <span class="barchart__value barchart__value--clinical-study-reports" style="width: 50%">(50%)</span>
+            </div>
+          </div>
+          <div class="barchart barchart--simple">
+            <span class="barchart__label">Individual patient data</span>
+            <span class="barchart__text-value"><strong>250</strong>/500</span>
+            <div class="barchart__draw">
+              <span class="barchart__value  barchart__value--individual-patient-data" style="width: 50%">(50%)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="company-body__section-two">
+        <div class="company-body__metrics">
+          <div class="metrics__metric metric--transparency">
+            <p class="metric__label">
+              Transparency rank
+            </p>
+            <p class="metric__value">
+             12th
+            </p>
+          </div>
+          <div class="metrics__metric metric--market-cap">
+            <p class="metric__label">
+              Est. market cap
+            </p>
+            <p class="metric__value">
+             £33bn
+            </p>
+          </div>
+          <div class="metrics__metric metric--known-for">
+            <p class="metric__label">
+              Known for
+            </p>
+            <p class="metric__value--known-for">
+             Lipitor (atorvastatin),  Lyrica, Diflucan
+            </p>
+          </div>
+        </div>
+        <p class="intro">Executive summary Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a fringilla dui. Pellentesque ullamcorper, nisl at viverra luctus, mauris arcu maximus mi, et ullamcorper libero elit id tellus. </p>
+        <ul class="company-body__highlights">
+          <li class="company-body__highlights__item company-body__highlights__item--top">
+            <strong>Top performer</strong> &ndash; One of only three companies to offer multiformat data
+          </li>
+          <li class="company-body__highlights__item company-body__highlights__item--positive">
+            <strong>Great</strong> &ndash; always references correctly
+          </li>
+          <li class="company-body__highlights__item company-body__highlights__item--negative">
+            <strong>Must do better</strong> &ndash; doesn’t publish sources
+          </li>
+          <li class="company-body__highlights__item company-body__highlights__item--positive">
+            <strong>Great</strong> &ndash; always references correctly
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  <div class="company-body__tabs hide-if-no-javascript">
+    <div class="container">
+      <div class="tabs">
+        <ul>
+            <li><a href="#registration">Registration</a></li>
+            <li><a href="#summary-results">Summary results</a></li>
+            <li><a href="#clinical-study-reports">Clinical study reports</a></li>
+            <li><a href="#individual-patient-data">Individual patient data</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="company-body">
+    <div class="container" id="js-company-tabs">
+
+      <div id="registration" class="company-body__tabs__item">
+        <div class="company-body__section-one">
+            <div class="chart-test-2">
+            </div>
+            <div class="rank-badge rank-badge--registration">
+              <p><strong>12</strong> out of 46</p>
+            </div>
+        </div>
+        <div class="company-body__section-two">
+          <h2 class="hide-if-javascript">Registration</h2>
+          <h3>Why this is important</h3>
+          <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a fringilla dui. Pellentesque ullamcorper, nisl at viverra luctus, elit id tellus. Pellentesque ullamcorper, nisl at viverra luctus, mauris arcu maximus mi, et ullamcorper libero elit id tellus.</p>
+          <div class="kernel-chart kernel-chart--registration kernel-chart-test"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a fringilla dui. Mauris arcu maximus mi, et ullamcorper libero elit id tellus. Pellentesque ullamcorper, nisl at viverra luctus, mauris arcu maximus mi, et ullamcorper libero elit id tellus.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a fringilla dui. Pellentesque ullamcorper, nisl at viverra, arcu maximus mi, et ullamcorper libero elit id tellus. Pellentesque ullamcorper, nisl at viverra luctus, mauris arcu maximus mi, et ullamcorper libero elit id tellus.</p>
+          <h3>Measures</h3>
+          <p>Short description orem ipsum dolor sit amet, consectetur adipiscing elit. Donec a fringilla dui. Mauris arcu maximus mi, et ullamcorper libero elit id tellus. Pellentesque ullamcorper, nisl at viverra luctus, mauris arcu maximus mi, et ullamcorper libero elit id tellus.</p>
+          <ul class="results-breakdown">
+            <li class="results-breakdown__item results-breakdown__item--positive">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            <li class="results-breakdown__item results-breakdown__item--negative">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            <li class="results-breakdown__item results-breakdown__item--positive">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            <li class="results-breakdown__item results-breakdown__item--negative">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            <li class="results-breakdown__item results-breakdown__item--positive">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+          </ul>
+        </div>
+      </div>
+      <div id="summary-results" class="company-body__tabs__item">
+        <div class="company-body__section-one">
+          <div class="chart-test-3">
+          </div>
+          <div class="rank-badge rank-badge--summary-results">
+            <p><strong>9</strong> out of 48</p>
+          </div>
+        </div>
+        <div class="company-body__section-two">
+          <h2 class="hide-if-javascript">Summary results</h2>
+          <h3>Why this is important</h3>
+          <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a fringilla dui. Pellentesque ullamcorper, nisl at viverra luctus, elit id tellus. Pellentesque ullamcorper, nisl at viverra luctus, mauris arcu maximus mi, et ullamcorper libero elit id tellus.</p>
+          <img src="http://lorempixel.com/900/400/" />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a fringilla dui. Mauris arcu maximus mi, et ullamcorper libero elit id tellus. Pellentesque ullamcorper, nisl at viverra luctus, mauris arcu maximus mi, et ullamcorper libero elit id tellus.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a fringilla dui. Pellentesque ullamcorper, nisl at viverra, arcu maximus mi, et ullamcorper libero elit id tellus. Pellentesque ullamcorper, nisl at viverra luctus, mauris arcu maximus mi, et ullamcorper libero elit id tellus.</p>
+          <ul class="results-breakdown">
+            <li class="results-breakdown__item results-breakdown__item--positive">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            <li class="results-breakdown__item results-breakdown__item--negative">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            <li class="results-breakdown__item results-breakdown__item--positive">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            <li class="results-breakdown__item results-breakdown__item--negative">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            <li class="results-breakdown__item results-breakdown__item--positive">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+          </ul>
+        </div>
+      </div>
+      <div id="clinical-study-reports" class="company-body__tabs__item">
+        <div class="company-body__section-one">
+          <div class="chart-test-4">
+          </div>
+          <div class="rank-badge rank-badge--clinical-study-reports">
+            <p><strong>17</strong> out of 48</p>
+          </div>
+        </div>
+        <div class="company-body__section-two">
+          <h2 class="hide-if-javascript">Clinical study reports</h2>
+          <h3>Why this is important</h3>
+          <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a fringilla dui. Pellentesque ullamcorper, nisl at viverra luctus, elit id tellus. Pellentesque ullamcorper, nisl at viverra luctus, mauris arcu maximus mi, et ullamcorper libero elit id tellus.</p>
+          <img src="http://lorempixel.com/900/400/" />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a fringilla dui. Mauris arcu maximus mi, et ullamcorper libero elit id tellus. Pellentesque ullamcorper, nisl at viverra luctus, mauris arcu maximus mi, et ullamcorper libero elit id tellus.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a fringilla dui. Pellentesque ullamcorper, nisl at viverra, arcu maximus mi, et ullamcorper libero elit id tellus. Pellentesque ullamcorper, nisl at viverra luctus, mauris arcu maximus mi, et ullamcorper libero elit id tellus.</p>
+          <ul class="results-breakdown">
+            <li class="results-breakdown__item results-breakdown__item--positive">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            <li class="results-breakdown__item results-breakdown__item--negative">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            <li class="results-breakdown__item results-breakdown__item--positive">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            <li class="results-breakdown__item results-breakdown__item--negative">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            <li class="results-breakdown__item results-breakdown__item--positive">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+          </ul>
+        </div>
+      </div>
+      <div id="individual-patient-data" class="company-body__tabs__item">
+        <div class="company-body__section-one">
+          <div class="chart-test-5">
+          </div>
+          <div class="rank-badge rank-badge--individual-patient-data">
+            <p><strong>17</strong> out of 48</p>
+          </div>
+        </div>
+        <div class="company-body__section-two">
+          <h2 class="hide-if-javascript">Individual patient data</h2>
+          <h3>Why this is important</h3>
+          <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a fringilla dui. Pellentesque ullamcorper, nisl at viverra luctus, elit id tellus. Pellentesque ullamcorper, nisl at viverra luctus, mauris arcu maximus mi, et ullamcorper libero elit id tellus.</p>
+          <img src="http://lorempixel.com/900/400/" />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a fringilla dui. Mauris arcu maximus mi, et ullamcorper libero elit id tellus. Pellentesque ullamcorper, nisl at viverra luctus, mauris arcu maximus mi, et ullamcorper libero elit id tellus.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a fringilla dui. Pellentesque ullamcorper, nisl at viverra, arcu maximus mi, et ullamcorper libero elit id tellus. Pellentesque ullamcorper, nisl at viverra luctus, mauris arcu maximus mi, et ullamcorper libero elit id tellus.</p>
+          <ul class="results-breakdown">
+            <li class="results-breakdown__item results-breakdown__item--positive">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            <li class="results-breakdown__item results-breakdown__item--negative">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            <li class="results-breakdown__item results-breakdown__item--positive">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            <li class="results-breakdown__item results-breakdown__item--negative">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            <li class="results-breakdown__item results-breakdown__item--positive">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+<script>window.AllTrials = window.AllTrials || {}</script>
+<script src="assets/js/awesomplete.js"></script>
+<script src="assets/js/d3.donut-chart.js"></script>
+<script src="assets/js/d3.kernel-density.js"></script>
+<script>
+
+$(function() {
+
+  // Sample data, random numbers in 4 categories from 0-500
+var data = [
+  {category: 1, score: 500},
+  {category: 2, score: 267},
+  {category: 3, score: 56},
+  {category: 4, score: 300}
+];
+
+var data2 = [
+  {category: 1, score: 125}
+];
+
+var data3 = [
+  {category: 2, score: 220}
+];
+
+var data4 = [
+  {category: 3, score: 56}
+];
+
+var data5 = [
+  {category: 4, score: 100}
+];
+// Make the chart generating function and set it up
+// width and height are optional
+var chart = AllTrials.donutChart();
+
+// Draw a chart in the body of the supplied data
+d3.select("body").select("div.chart-test")
+  .datum(data)
+  .call(chart);
+
+// Make the chart generating function and set it up
+var chart2 = AllTrials.donutChart();
+chart2 = chart2
+    .titleStyle(chart2.TITLE_STYLE_XOFY)
+    .maximumPossible(250);
+
+d3.select("body").select("div.chart-test-2")
+  .datum(data2)
+  .call(chart2);
+
+// Make the chart generating function and set it up
+var chart3 = AllTrials.donutChart();
+chart3 = chart3
+    .titleStyle(chart3.TITLE_STYLE_XOFY)
+    .maximumPossible(250);
+
+d3.select("body").select("div.chart-test-3")
+  .datum(data3)
+  .call(chart3);
+
+// Make the chart generating function and set it up
+var chart4 = AllTrials.donutChart();
+chart4 = chart4
+    .titleStyle(chart4.TITLE_STYLE_XOFY)
+    .maximumPossible(250);
+
+d3.select("body").select("div.chart-test-4")
+  .datum(data4)
+  .call(chart4);
+
+// Make the chart generating function and set it up
+var chart5 = AllTrials.donutChart();
+chart5 = chart5
+    .titleStyle(chart5.TITLE_STYLE_XOFY)
+    .maximumPossible(250);
+
+d3.select("body").select("div.chart-test-5")
+  .datum(data5)
+  .call(chart5);
+});
+
+$(function(){
+  // 48 randomly generated scores between 0-500
+  var data = [401, 469, 472, 381, 396, 497, 476, 482, 414, 350, 414, 487, 402, 474, 423, 473, 420, 434, 374, 479, 390, 387, 390, 453, 362, 395, 449, 355, 488, 350, 453, 399, 428, 407, 439, 401, 375, 384, 485, 362, 364, 417, 385, 350, 456, 454, 364, 475, 477];
+  // A score to highlight on the map
+  var score = 450;
+
+  // Make the chart generating function and set it up
+  var chartk = AllTrials.kdeChart();
+  chartk = chartk
+      .score(score);
+
+  // Draw a chart in the body of the supplied data
+  d3.select(".kernel-chart")
+    .datum(data)
+    .call(chartk);
+});
+
+$(document).ready(function() {
+    $('.tabs').tabslet({
+        container: '#js-company-tabs'
+  });
+});
+</script>
+
+<script>
+function slugify(text)
+{
+  return text.toString().toLowerCase()
+    .replace(/\s+/g, '-')           // Replace spaces with -
+    .replace(/[^\w\-]+/g, '')       // Remove all non-word chars
+    .replace(/\-\-+/g, '-')         // Replace multiple - with single -
+    .replace(/^-+/, '')             // Trim - from start of text
+    .replace(/-+$/, '');            // Trim - from end of text
+}
+$(function() {
+  var company_names = AllTrials.companies.map(function(company) { return company.company_name; });
+  var $input = $('.search-block__text-input');
+  var awesomplete = new Awesomplete($input[0], {
+    list: company_names,
+    minChars: 1
+  });
+
+  $input.on('awesomplete-selectcomplete', function(e) {
+    var name = $input.val();
+    window.location.href = "/companies/" + slugify(name) + ".html";
+  });
+});
+</script>

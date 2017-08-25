@@ -1,0 +1,120 @@
+.site-header__primary {
+  background-color: $colour_green;
+  .container {
+    position: relative;
+  }
+  a {
+    color: $colour_white;
+    &:hover,
+    &:active,
+    &:focus {
+      color: transparentize($colour_white, 0.2);
+    }
+  }
+}
+
+.site-header__secondary {
+  background-color: $colour_off_white;
+  .container {
+    position: relative;
+  }
+}
+
+.site-title {
+  padding: 0.6em 0;
+  display: inline-block;
+  font-weight: $body_typeface_bold;
+  font-size: 1.235294118em;
+  span {
+    font-weight: normal;
+    color: transparentize($colour_white, 0.4);
+  }
+}
+
+.primary-navigation {
+  @media(min-width: $medium-screen) {
+    position: absolute;
+    right: 1em;
+    top: 0.55em;
+  }
+}
+
+.primary-navigation__list {
+  @include unstyled-list();
+  @media(min-width: $medium-screen) {
+    @include inline-list();
+  }
+}
+
+.primary-navigation__list__item__inner {
+  font-weight: $body_typeface_bold;
+  display: block;
+  padding: 0.5em 0;
+  @media(min-width: $medium-screen) {
+    padding: 0;
+  }
+}
+
+.primary-navigation__list__item__inner--disabled {
+  @extend .primary-navigation__list__item__inner;
+  color: transparentize($colour_white, 0.5);
+}
+
+.secondary-navigation__list {
+  @include unstyled-list();
+  @media(min-width: $medium-screen) {
+    @include inline-list();
+  }
+}
+
+.secondary-navigation__list__item__inner {
+  color: $colour_black;
+  padding: 0.75em 0;
+  display: inline-block;
+  &:hover,
+  &:active,
+  &:focus {
+    color: transparentize($colour_black, 0.5);
+  }
+}
+
+.paper-download-button {
+  border: 1px solid $colour_borders;
+  display: inline-block;
+  padding: 0.35em 1em 0.35em 3.8em;
+  border-radius: 3px;
+  font-size: 0.875em;
+  color: $colour_black;
+  background-color: $colour_white;
+  margin-bottom: 1em;
+  position: relative;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $colour_light_grey;
+    color: #000;
+    border-color: darken($colour_light_grey, 5);
+  }
+  @media(min-width: 54em) {
+    position: absolute;
+    right: 1em;
+    top: 0.4em;
+  }
+
+  &:before {
+    content: '';
+    display: inline-block;
+    background-image: url('../assets/images/paper-download.svg');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 48px 38px;
+    height: 38px;
+    width: 48px;
+    position: absolute;
+    left: 3px;
+    top: -5px;
+    @media(min-width: $medium_screen) {
+      top: -3px;
+    }
+  }
+}

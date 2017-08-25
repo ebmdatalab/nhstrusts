@@ -1,0 +1,50 @@
+.transparency-ranking {
+  padding-top: 2em;
+  .container {
+    position: relative;
+  }
+  h2 {
+    @extend .tertiary-heading;
+      margin-bottom: 1em;
+  }
+  .transparency-ranking__table {
+    margin-top: 1em;
+  }
+}
+
+.home-about-this-site {
+  margin: 3em 0;
+  padding-bottom: 2em;
+  border-bottom: 1px solid $colour_light_grey;
+  h2 {
+    @extend .tertiary-heading;
+  }
+}
+
+.home-about-this-site__two-column-content {
+  margin-top: 1.5em;
+  @media (min-width:$medium_screen) {
+    @include vendor-prefix (column-count, 2);
+    @include vendor-prefix (column-gap, 4em);
+  }
+
+}
+
+.contact-us-button {
+  display: inline-block;
+  border: 1px solid $colour_borders;
+  background-color: $colour_off_white;
+  display: inline-block;
+  padding: 0.35em 1em;
+  border-radius: 3px;
+  font-size: 0.875em;
+  margin-top: 1em;
+  color: $colour_black;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $colour_light_grey;
+    color: #000;
+    border-color: darken($colour_light_grey, 5);
+  }
+}

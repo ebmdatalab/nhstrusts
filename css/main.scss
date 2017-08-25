@@ -1,0 +1,504 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+@import 'normalize';
+@import 'mixins';
+@import 'variables';
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+html {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: $colour_background;
+  color: $colour_black;
+  font-family: $body_typeface;
+  font-size: 1.0625em; //17px
+  height: 100%;
+  line-height: 1.388888889em; //25px
+  min-height: 100%;
+  @media (min-width:$medium_screen) {
+    line-height: 1.5em; //27px
+  }
+}
+
+a {
+  color: $colour_links;
+  text-decoration: none;
+  &:hover,
+  &:active,
+  &:focus {
+    color:darken($colour_links, 10%);
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading_typeface;
+  line-height: 1.1em;
+  margin-bottom: 0.33em;
+  margin-top: 0;
+  font-weight: $heading_typeface_bold;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+.primary-heading {
+  font-size: 2.369em;
+  @media (min-width:$medium_screen) {
+    font-size: 3.157em;
+  }
+}
+
+h2,
+.secondary-heading {
+  font-size: 1.777em;
+  @media (min-width:$medium_screen) {
+    font-size: 2.369em;
+  }
+}
+
+h3,
+.tertiary-heading {
+  font-size: 1.333em;
+  @media (min-width:$medium_screen) {
+    font-size: 1.777em;
+  }
+}
+
+h4,
+.quarternary-heading {
+  font-size: 1.1em;
+  @media (min-width:$medium_screen) {
+    font-size: 1.333em;
+  }
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+pre, code, kbd, samp {
+  font-family: Consolas, 'Liberation Mono', Courier, monospace;
+}
+
+code {
+  @include vendor-prefix(border-radius, $border_radius);
+  border: 1px solid $colour_borders;
+  padding: 0 0.2em;
+}
+
+pre {
+  background-color: $colour_background;
+  @include vendor-prefix(border-radius, $border_radius);
+  border: 1px solid $colour_borders;
+  display: block;
+  font-size: .9375em;
+  line-height: 1.4375em;
+  max-width: 100%;
+  overflow-x: scroll;
+  padding: 1em;
+  white-space: pre-wrap;
+  code {
+    border: none;
+    padding: 0;
+  }
+}
+
+hr {
+  border: none;
+  border-top: 1px solid $colour_borders;
+  margin: 0;
+}
+
+audio,
+video,
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ol,
+ul {
+  padding-left: 1.8em;
+}
+
+th {
+  text-align: left;
+}
+
+strong, b {
+  font-weight: $body_typeface_bold;
+}
+
+mark {
+  background-color: lighten($colour_red, 20%);
+}
+
+blockquote {
+  @include vendor-prefix(border-radius, $border_radius);
+  clear: both;
+  color: $colour_dark_grey;
+  font-size: 1.125em;
+  font-style: italic;
+  line-height: 1.5em;
+  margin: 1em 0;
+  padding: 1em 1em 1em 1.5em;
+}
+
+input[type=file] {
+  max-width: 100%;
+  width: 100%;
+}
+
+input[type=text],
+input[type=password],
+input[type=url],
+input[type=email],
+input[type=number],
+input[type=tel],
+input[type=search],
+input[type=time],
+input[type=datalist],
+input[type=date],
+textarea,
+.standard-input {
+  @include vendor-prefix(border-radius, $border_radius);
+  border: 1px solid $colour_borders;
+  max-width: 100%;
+  padding: 0.66em;
+}
+
+input[type=text],
+input[type=password],
+input[type=url],
+input[type=email],
+input[type=number],
+input[type=tel],
+input[type=search],
+textarea {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+legend {
+  font-family: $heading_typeface;
+  font-size: 1.764705882em;
+  font-weight: $heading_typeface_bold;
+  line-height: 1.1em;
+  margin-bottom: 0.33em;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 1em 0;
+  max-width: 100%;
+  width: 100%;
+  p {
+    margin: 0;
+  }
+}
+
+td, th {
+  border-bottom: 1px solid $colour_borders;
+  padding: 0.75em 0.6em;
+  text-align: left;
+}
+
+th {
+  background: inherit;
+  font-weight: $body_typeface_bold;
+  color: $colour_dark_grey;
+  text-transform: uppercase;
+  font-size: 0.764705882em;
+}
+
+th[scope="row"] {
+  color: $colour_dark_grey;
+}
+
+tbody {
+  tr:hover {
+    background-color: $colour_background;
+    th[scope="row"] {
+      color: $colour_black;
+    }
+  }
+}
+
+caption {
+  color: $colour_dark_grey;
+  margin: 0;
+  padding: 0.5em 0;
+  text-align: left;
+}
+
+tfoot {
+  font-size: 0.875em;
+  font-weight: normal;
+  td {
+    text-align: right;
+    border: none;
+  }
+}
+
+.js .hide-if-javascript {
+  display: none;
+}
+
+.hide-if-no-javascript {
+  display: none;
+}
+
+.js .hide-if-no-javascript {
+  display: block;
+}
+
+.dark-header {
+  background-color: $colour_black;
+  color: $colour_off_white;
+  padding: 3em 0;
+  @include clearfix;
+
+  .awesomplete li {
+    color: $colour_black;
+  }
+}
+
+.dark-header__title-area {
+  position: relative;
+  @media (min-width: $medium_screen) {
+    width: 63.666%;
+    margin-right: 3%;
+    float: left;
+  }
+}
+
+.dark-header__title-area--full-width {
+  @media (min-width: $medium_screen) {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.dark-header__main-title {
+  i {
+    font-weight: normal;
+    font-style: normal;
+    color: $colour_mid_grey;
+  }
+}
+
+.dark-header__search {
+  @media (min-width: $medium_screen) {
+    width: 33.333%;
+    float: left;
+  }
+}
+
+.no-js .dark-header__search {
+  display: none;
+}
+
+.dark-header__subhead {
+  color: $colour_mid_grey;
+  margin-bottom: 0;
+  margin-right: 5em;
+}
+
+
+.search-block {
+ // A generic, simple search bar, appears in the header of the company page
+}
+
+.search-block__form {
+  @include flexbox();
+  flex-flow: row wrap;
+}
+
+.search-block__label {
+  @include flex(1 100%);
+  font-weight: normal;
+  margin-bottom: 0.5em;
+}
+
+.awesomplete {
+  @include flex(1 90%);
+}
+
+.search-block__text-input {
+  width: 100%;
+  border-right: none !important;
+}
+
+.search-block__submit {
+  @include flex(0 0 10%);
+  @extend .image-replacement;
+  background-repeat: no-repeat;
+  background-size: 1.117647059em;
+  background-position: center;
+  background-color: transparent;
+  background-image: url('../assets/images/search-icon.svg');
+  border: 1px solid $colour_borders;
+  border-left: 0;
+}
+
+.search-block--dark {
+  .search-block__submit,
+  .search-block__text-input {
+    border: 0;
+    background-color: $colour_dark_grey;
+  }
+  .search-block__text-input {
+    color: #fff;
+  }
+  .search-block__submit {
+    background-image: url('../assets/images/search-icon--dark.svg');
+  }
+}
+
+.search-block__table-search {
+  @media (min-width: $medium_screen) {
+    position: absolute;
+    right: 1em;
+    top: -2.5em;
+  }
+
+}
+
+.intro {
+  font-size: 1.176470588em;
+  line-height: 1.5em;
+}
+
+@mixin quality-icon($type:positive) {
+  // mixin to add quality icons to elements
+  // type: positive, negative, star
+  padding-left: 2em;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  @if $type == negative {
+    background-image: url('../assets/images/negative-icon.svg');
+  } @else if $type == star {
+    background-image: url('../assets/images/star-icon.svg');
+  } @else {
+    background-image: url('../assets/images/positive-icon.svg');
+  }
+}
+
+.page__canvas {
+  max-width: 39em;
+  margin: 0 auto;
+}
+
+.page__canvas__title {
+  text-align: center;
+  margin-bottom: 1.5em;
+  padding: 1em 0 0;
+  &:after {
+    content: " ";
+    height: 0.15em;
+    width: 1.5em;
+    background-color: $colour_grey;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 0.5em;
+  }
+}
+
+.transparency-ranking__table__rank {
+  width: 15%;
+  @media (min-width:$medium_screen) {
+    width: 10%;
+  }
+}
+
+.transparency-ranking__table__name {
+  width: 60%;
+  font-weight: $body_typeface_bold;
+  @media (min-width:$medium_screen) {
+    width: 25%;
+  }
+  a {
+    color: $colour_black;
+    &:hover,
+    &:active,
+    &:focus {
+      color: $colour_black;
+      text-decoration: underline;
+    }
+  }
+}
+
+.transparency-ranking__table__score {
+  width: 25%;
+  @media (min-width:$medium_screen) {
+    width: 15%;
+  }
+}
+
+.transparency-ranking__table__chart {
+  display: none;
+  @media (min-width:$medium_screen) {
+    display: table-cell;
+  }
+}
+
+.appendix {
+  margin-top: 2em;
+  border: 1px solid $colour_borders;
+  border-top: 0;
+  font-size: .882352941em;
+
+  %appendix-heading {
+    background-color: $colour_off_white;
+    border: 1px solid $colour_borders;
+    border-left: 0;
+    border-right: 0;
+    padding: 1.5rem 3rem;
+    margin-bottom: 1rem;
+  }
+
+  ul,
+  ol,
+  p,
+  h4 {
+    padding: 0 3rem;
+  }
+
+  h2 {
+    @extend .tertiary-heading;
+  }
+
+  h3 {
+    @extend .quarternary-heading;
+    @extend %appendix-heading;
+  }
+
+  h4 {
+    font-size: 1em;
+  }
+
+}
+
+.big-hoz-break {
+  margin: 5em 0;
+}
+
+@import 'header';
+@import 'footer';
+@import 'company';
+@import 'graphs';
+@import 'home';

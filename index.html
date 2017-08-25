@@ -1,0 +1,88 @@
+---
+layout: default
+---
+
+<div class="home">
+
+<div class="dark-header">
+  <div class="container">
+    <div class="dark-header__title-area dark-header__title-area--full-width">
+      <h1 class="dark-header__main-title">+AllTrials <i>Transparency Index</i></h1>
+      <p class="dark-header__subhead">Ranking the world’s biggest pharmaceutical companies by their policies on clinical trials transparency</p>
+    </div>
+  </div>
+</div>
+
+</div>
+<div class="home-about-this-site">
+  <div class="container">
+    <h2>About this site</h2>
+    <div class="home-about-this-site__two-column-content">
+      <p>In medicine we use the results of clinical trials to make informed treatments about which treatments work best. But there is a problem: the results of clinical trials are being routinely and legally withheld from doctors, researchers, and patients. This is a problem for industry sponsored trials, and for trials funded by governments and charities.</p>
+      <p> We have ranked all the world’s major drug companies, and a selection of smaller firms, by the commitments they make to clinical trials transparency.  Next, we will be ranking the policies of non-industry trial funders. You can find out more about unreported clinical trials at <a href="http://alltrials.net/">AllTrials.net</a>.</p>
+    </div>
+    <p><a href="http://www.alltrials.net/contact/" class="contact-us-button">Contact us</a></p>
+  </div>
+</div>
+<div class="transparency-ranking">
+  <div class="container">
+    <h2>Company ranking</h2>
+    <div class="search-block search-block__table-search">
+      <form class="search-block__form">
+        <label class="search-block__label" for="q">Find a company</label>
+        <input type="text" placeholder="Eg. Pfizer, Inc" class="search-block__text-input" name="q" id="q">
+        <input type="submit" value="Search" class="search-block__submit" />
+      </form>
+    </div>
+    <table class="transparency-ranking__table">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Name</th>
+          <th>Score</th>
+          <th class="transparency-ranking__table__chart">Breakdown</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for company in site.data.companies %}
+          <tr>
+            <td class="transparency-ranking__table__rank">{{ company["total_rank"] }}</td>
+            <td class="transparency-ranking__table__name">
+              <a href="companies/{{ company["publisher_1"] | slugify }}.html">
+                {{ company["publisher_1"] }}
+              </a>
+            </td>
+            <td class="transparency-ranking__table__score">{{ company["total"] | round }}</td>
+            <td class="transparency-ranking__table__chart">
+              <div class="barchart barchart--simple">
+                <div class="barchart__draw">
+                  <span class="barchart__value barchart__value--registration"
+                        title="Registration: {{ company['registration'] }}"
+                        style="width: {{ company["registration_percentage_of_total"] }}%">
+                    Registration: {{ company["registration_percentage_of_total"] | round }}%
+                  </span>
+                  <span class="barchart__value barchart__value--summary-results"
+                        title="Summary results: {{ company['results'] }}"
+                        style="width: {{ company["results_percentage_of_total"] }}%">
+                    Summary results: {{ company["results_percentage_of_total"] | round }}%
+                  </span>
+                  <span class="barchart__value barchart__value--clinical-study-reports"
+                        title="Clinical study reports: {{ company['csrs'] }}"
+                        style="width: {{ company["csrs_percentage_of_total"] }}%">
+                    Clinical study reports: {{ company["csrs_percentage_of_total"] | round }}%
+                  </span>
+                  <span class="barchart__value barchart__value--individual-patient-data"
+                        title="Individual patient data: {{ company['ipd'] }}"
+                        style="width: {{ company["ipd_percentage_of_total"] }}%">
+                    Individual patient data: {{ company["ipd_percentage_of_total"] |round }}%
+                  </span>
+                </div>
+              </div>
+            </td>
+          </tr>
+        {% endfor %}
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

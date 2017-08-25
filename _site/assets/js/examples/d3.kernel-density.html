@@ -1,0 +1,88 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Kernel Density Estimation</title>
+  <style>
+
+  body {
+    font: 16px sans-serif;
+  }
+
+  .chart-test {
+    width: 960px;
+    height: 500px;
+  }
+
+  .line {
+    fill: none;
+    stroke: #E53C42;
+    opacity: 0.5;
+    stroke-width: 1.5px;
+  }
+
+  .score-lines .min,
+  .score-lines .mean,
+  .score-lines .max {
+    stroke: #333;
+  }
+
+  .score-lines .score {
+    stroke-width: 4px;
+    stroke: #E53C42;
+    opacity: 1;
+  }
+
+  .line-label {
+    fill: #333;
+  }
+
+  .area {
+    fill: #E53C42;
+    opacity: 0.25;
+    stroke: none;
+  }
+
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #333;
+    shape-rendering: crispEdges;
+  }
+
+  .y.axis text,
+  .y.axis .tick {
+    display: none;
+  }
+
+  .x.axis text {
+    fill: #333;
+  }
+
+  </style>
+</head>
+<body>
+  <div class="kernel-chart-test"></div>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script>window.AllTrials = window.AllTrials || {}</script>
+  <script src="../d3.kernel-density.js"></script>
+  <script>
+    $(function(){
+      // 48 randomly generated scores between 0-500
+      var data = [401, 469, 472, 381, 396, 497, 476, 482, 414, 350, 414, 487, 402, 474, 423, 473, 420, 434, 374, 479, 390, 387, 390, 453, 362, 395, 449, 355, 488, 350, 453, 399, 428, 407, 439, 401, 375, 384, 485, 362, 364, 417, 385, 350, 456, 454, 364, 475, 477];
+      // A score to highlight on the map
+      var score = 450;
+
+      // Make the chart generating function and set it up
+      var chart = AllTrials.kdeChart();
+      chart = chart
+          .score(score);
+
+      // Draw a chart in the body of the supplied data
+      d3.select(".chart-test")
+        .datum(data)
+        .call(chart);
+    });
+  </script>
+</body>
+</html>

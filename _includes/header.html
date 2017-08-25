@@ -1,0 +1,29 @@
+<header class="site-header">
+  <div class="site-header__primary">
+    <div class="container">
+      <a class="site-title" href="{{ site.baseurl }}/">+AllTrials <span>Transparency index</span></a>
+      <nav class="primary-navigation">
+        <ul class="primary-navigation__list">
+          <li class="primary-navigation__list__item">
+            <a class="primary-navigation__list__item__inner" href="/">
+              Companies
+            </a>
+          </li>
+          <li class="primary-navigation__list__item">
+            <a class="primary-navigation__list__item__inner" href="/non-industry-sponsors/">
+              Non-industry Sponsors
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="site-header__secondary">
+    <div class="container">
+      <nav>
+        {% include navigation/companies-nav.html %}
+      </nav>
+      <a href="http://www.bmj.com/content/358/bmj.j3334" class="paper-download-button">Download the paper</a>
+    </div>
+  </div>
+</header>

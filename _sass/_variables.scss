@@ -1,0 +1,38 @@
+
+$aktiv: "aktiv-grotesk", "Helvetica Neue", Arial, Helvetica, serif;
+
+$body_typeface: $aktiv;
+$body_typeface_semibold: 500;
+$body_typeface_bold: 700;
+$heading_typeface: $aktiv;
+$heading_typeface_bold: 700;
+
+$colour_blue: #6BC6D9;
+$colour_green: #75BC5D;
+$colour_red: #E74040;
+$colour_orange: #E9AC58;
+$colour_yellow: #EEE479;
+$colour_white: #FFFFFF;
+$colour_off_white: #F5F3ED;
+$colour_light_grey: #E9E7E0;
+$colour_grey: #DBD9D0;
+$colour_mid_grey: #AFAEA7;
+$colour_dark_grey: #7F7E7A;
+$colour_black: #3B3B3B;
+
+$colour_background: $colour_white;
+$colour_links: darken($colour_blue, 20%);
+$colour_borders: $colour_light_grey;
+
+$border_radius: 0;
+
+$size_font-base: 17px;
+
+$giant_screen: 69em;
+$large_screen: 56em;
+$medium_screen: 44em;
+$high_dpi_screen: '-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi';
+
+$animation-short: 0.2s ease-out;
+
+

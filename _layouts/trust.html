@@ -1,0 +1,75 @@
+---
+layout: default
+---
+<div class="company">
+
+  <div class="dark-header">
+    <div class="container">
+      <div class="dark-header__title-area">
+        <p class="dark-header__subhead">
+          How transparent are {{ page.trust['name'] }}&rsquo;s clinical trials?
+        </p>
+        <h1 class="dark-header__company-name">
+          {{ page.trust['name'] }}
+        </h1>
+      </div>
+      <div class="dark-header__search search-block search-block--dark">
+        <form class="search-block__form">
+          <label class="search-block__label" for="q">Find a trust</label>
+          <input type="text" placeholder="Eg. Pfizer, Inc" class="search-block__text-input" name="q" id="q">
+          <input type="submit" value="Search" class="search-block__submit" />
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="company-body company-body--intro">
+    <div class="container">
+
+
+      <div class="company-body__section-two">
+        <p class="intro">Executive summary Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a fringilla dui. Pellentesque ullamcorper, nisl at viverra luctus, mauris arcu maximus mi, et ullamcorper libero elit id tellus. </p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="company-body__tabs hide-if-no-javascript">
+    <div class="container">
+      <div class="tabs">
+        <ul>
+            <li><a href="#data">Questions and answers</a></li>
+            <li><a href="#sources">Sources</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="company-body">
+    <div class="container" id="js-company-tabs">
+      <div id="data" class="company-body__tabs__item">
+        <h2 class="hide-if-javascript">Questions and answers</h2>
+        <p>Stuff here</p>
+        <dl class="results-breakdown">
+          {% for q in page.questions %}
+          {% assign qid = q[0] %}
+          <dt>{{ q[1] }}</dt>
+          <dd>{{ page.hospitality[qid] }}</dd>
+          {% endfor %}
+        </dl>
+      </div>
+      <div id="sources" class="company-body__tabs__item">
+        <h2 class="hide-if-javascript">Sources</h2>
+        <p>These are the responses we got from the organisation</p>
+        <!-- you can extract the ID from the DOI -->
+        <iframe src="https://widgets.figshare.com/articles/4968626/embed?show_title=1" width="568" height="351" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var AllTrials = window.AllTrials || {};
+  AllTrials.trust = {{ page.trust | jsonify }};
+</script>

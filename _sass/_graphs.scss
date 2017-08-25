@@ -1,0 +1,258 @@
+.donut__label {
+  font-size: 0.764705882em;
+  fill: $colour_dark_grey;
+  font-weight: $body_typeface_bold;
+}
+
+.donut__value {
+  font-size: 1.882352941em;
+  fill: $colour_black;
+  font-weight: $body_typeface_bold;
+  letter-spacing: -0.025em;
+}
+
+.donut__label--xofy {
+  text-transform: uppercase;
+}
+
+.arc path {
+  stroke: #fff;
+}
+
+.category_1 {
+  fill: $colour_red;
+}
+.category_2 {
+  fill: $colour_green;
+}
+.category_3 {
+  fill: $colour_blue;
+}
+.category_4 {
+  fill: $colour_orange;
+}
+.category_empty {
+  fill: $colour_off_white;
+}
+
+
+// Barcharts
+.barchart {
+  margin: 0.5em 0;
+  position: relative;
+}
+
+.barchart__label,
+.barchart__text-value {
+  font-size: 0.764705882em;
+  display: inline-block;
+}
+
+.barchart__text-value {
+  color: $colour_dark_grey;
+  position: absolute;
+  right: 0;
+  strong {
+    color: $colour_black;
+  }
+}
+
+.barchart__draw {
+  font-size: 0;
+  height: 9px;
+  width: 100%;
+  background-color: $colour_off_white;
+}
+
+.barchart__value {
+  display: inline-block;
+  height: 9px;
+  @extend .image-replacement;
+  overflow: visible;
+}
+
+.barchart__value--registration {
+  background-color: $colour_red;
+}
+.barchart__value--summary-results {
+  background-color: $colour_green;
+}
+.barchart__value--clinical-study-reports {
+  background-color: $colour_blue;
+}
+.barchart__value--individual-patient-data {
+  background-color: $colour_orange;
+}
+
+// Kernel density diagram
+
+// .kernel-chart {
+//   width: 100%;
+//   height: 680px;
+//   min-height: 680px;
+// }
+
+// .line {
+//   fill: none;
+//   stroke: $colour_red;
+//   opacity: 0.5;
+//   stroke-width: 1.5px;
+// }
+
+// .score-lines .min,
+// .score-lines .mean,
+// .score-lines .max {
+//   stroke: $colour_dark_grey;
+// }
+
+// .score-lines .score {
+//   stroke-width: 4px;
+//   stroke: $colour_red;
+//   opacity: 1;
+// }
+
+// .line-label {
+//   fill: $colour_black;
+//   font-weight: $body_typeface_bold;
+//   text-transform: uppercase;
+//   font-size: 0.764705882em;
+//   &.score {
+//     fill: $colour_red;
+//     font-size: 1em;
+//   }
+// }
+
+// .area {
+//   fill: $colour_red;
+//   opacity: 0.25;
+//   stroke: none;
+// }
+
+// .axis path,
+// .axis line {
+//   fill: none;
+//   stroke: $colour_grey;
+//   shape-rendering: crispEdges;
+// }
+
+// .y.axis text,
+// .y.axis .tick {
+//   display: none;
+// }
+
+// .x.axis text {
+//   fill: $colour_dark_grey;
+//   font-size: 0.764705882em;
+// }
+
+// .kernel-chart--registration {
+//   .line,
+//   .score-lines .score {
+//     stroke: $colour_red;
+//   }
+//   .line-label .score,
+//   .area {
+//     fill: $colour_red;
+//   }
+// }
+
+// .kernel-chart--clinical-study-reports {
+//   .line,
+//   .score-lines .score {
+//     stroke: $colour_blue;
+//   }
+//   .line-label.score,
+//   .area {
+//     fill: $colour_blue;
+//   }
+// }
+
+// .kernel-chart--individual-patient-data {
+//   .line,
+//   .score-lines .score {
+//     stroke: $colour_orange;
+//   }
+//   .line-label.score,
+//   .area {
+//     fill: $colour_orange;
+//   }
+// }
+
+// .kernel-chart--summary-results {
+//   .line,
+//   .score-lines .score {
+//     stroke: $colour_green;
+//   }
+//   .line-label.score,
+//   .area {
+//     fill: $colour_green;
+//   }
+// }
+
+// Stacked Bar Chart
+.stacked-bar-chart {
+  width: 100%;
+  height: 680px;
+  min-height: 680px;
+
+  .axis text {
+    font: 10px sans-serif;
+  }
+
+  .axis line,
+  .axis path {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+
+  .axis--x path {
+    display: none;
+  }
+
+  .layer--registration {
+    fill: lighten($colour_red, 40%);
+    &.layer--selected {
+      .selected-company {
+        fill: $colour_red;
+      }
+      .other-company {
+        fill: lighten($colour_red, 20%);
+      }
+    }
+  }
+
+  .layer--results {
+    fill: lighten($colour_green, 40%);
+    &.layer--selected {
+      .selected-company {
+        fill: $colour_green;
+      }
+      .other-company {
+        fill: lighten($colour_green, 20%);
+      }
+    }
+  }
+  .layer--csrs {
+    fill: lighten($colour_blue, 30%);
+    &.layer--selected {
+      .selected-company {
+        fill: $colour_blue;
+      }
+      .other-company {
+        fill: lighten($colour_blue, 15%);
+      }
+    }
+  }
+  .layer--ipd {
+    fill: lighten($colour_orange, 30%);
+    &.layer--selected {
+      .selected-company {
+        fill: $colour_orange;
+      }
+      .other-company {
+        fill: lighten($colour_orange, 15%);
+      }
+    }
+  }
+}
