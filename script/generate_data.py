@@ -100,11 +100,12 @@ def main():
     reader = csv.reader(content.splitlines(), delimiter=',')
     fieldnames = [x.lower().replace(' ', '_').replace('?', '')
                   for x in reader.next()]
+    scores = sorted(list(reader), key=lambda x: (-int(x[7]), x[1]))
     with open('./_data/hospitality-coi-scores.csv', 'wb') as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow(fieldnames)
-        for row in reader:
-            writer.writerow(row)
+        writer.writerow(['rank'] + fieldnames)
+        for rank, row in enumerate(scores, 1):
+            writer.writerow([rank] + row)
     # Maintain these questions manually
     #with open('./_data/hospitality-coi-scores-questions.csv', 'wb') as csvfile:
     #    writer = csv.writer(csvfile)

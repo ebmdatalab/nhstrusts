@@ -44,37 +44,42 @@ layout: default
         </tr>
       </thead>
       <tbody>
-        {% for company in site.data.companies %}
+        {% for trust in site.data['hospitality-coi-scores'] %}
           <tr>
-            <td class="transparency-ranking__table__rank">{{ company["total_rank"] }}</td>
+            <td class="transparency-ranking__table__rank">{{ trust["rank"] }}</td>
             <td class="transparency-ranking__table__name">
-              <a href="companies/{{ company["publisher_1"] | slugify }}.html">
-                {{ company["publisher_1"] }}
+              <a href="companies/{{ trust["trust_name"] | slugify }}.html">
+                {{ trust["trust_name"] }}
               </a>
             </td>
-            <td class="transparency-ranking__table__score">{{ company["total"] | round }}</td>
+            <td class="transparency-ranking__table__score">{{ trust["total_score"] | round }}</td>
             <td class="transparency-ranking__table__chart">
               <div class="barchart barchart--simple">
                 <div class="barchart__draw">
-                  <span class="barchart__value barchart__value--registration"
-                        title="Registration: {{ company['registration'] }}"
-                        style="width: {{ company["registration_percentage_of_total"] }}%">
-                    Registration: {{ company["registration_percentage_of_total"] | round }}%
+                  <span class="barchart__value barchart__value--ontime"
+                        title="Responded on time? {{ trust['responded_on_time']|yesno }}"
+                        style="width: {{ trust["responded_on_time"]|times:20 }}%">
+                    Responded on time: {{ trust["responded_on_time"] | round }}%
                   </span>
-                  <span class="barchart__value barchart__value--summary-results"
-                        title="Summary results: {{ company['results'] }}"
-                        style="width: {{ company["results_percentage_of_total"] }}%">
-                    Summary results: {{ company["results_percentage_of_total"] | round }}%
+                  <span class="barchart__value barchart__value--register"
+                        title="Sent a register? {{ trust['sent_a_register']|yesno }}"
+                        style="width: {{ trust["sent_a_register"]|times:20 }}%">
+                    Sent a register: {{ trust["sent_a_register"] | round }}%
                   </span>
-                  <span class="barchart__value barchart__value--clinical-study-reports"
-                        title="Clinical study reports: {{ company['csrs'] }}"
-                        style="width: {{ company["csrs_percentage_of_total"] }}%">
-                    Clinical study reports: {{ company["csrs_percentage_of_total"] | round }}%
+                  <span class="barchart__value barchart__value--structure"
+                        title="Provided complete data structure? {{ trust['complete_data_structure']|yesno }}"
+                        style="width: {{ trust["complete_data_structure"]|times:20 }}%">
+                    Complete data structure: {{ trust["complete_data_structure"] | round }}%
                   </span>
-                  <span class="barchart__value barchart__value--individual-patient-data"
-                        title="Individual patient data: {{ company['ipd'] }}"
-                        style="width: {{ company["ipd_percentage_of_total"] }}%">
-                    Individual patient data: {{ company["ipd_percentage_of_total"] |round }}%
+                  <span class="barchart__value barchart__value--public"
+                        title="Publicly accessible? {{ trust['publically_accessible']|yesno }}"
+                        style="width: {{ trust["publically_accessible"]|times:20 }}%">
+                    Publicly accessible: {{ trust["publically_accessible"] | round }}%
+                  </span>
+                  <span class="barchart__value barchart__value--reusable"
+                        title="Resuable format? {{ trust['reusable_format']|yesno }}"
+                        style="width: {{ trust['reusable_format']|times:20 }}%">
+                    Reusable format: {{ trust['reusable_format'] | round }}%
                   </span>
                 </div>
               </div>
