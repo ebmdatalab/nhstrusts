@@ -8,6 +8,7 @@ analysis/
 docs/
 cache-warming/
 vendor/
+_site/
 # System files
 *.py[co]
 *.egg*
