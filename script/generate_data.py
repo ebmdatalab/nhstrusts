@@ -49,21 +49,23 @@ def nhs_titlecase(words):
     return words
 
 
-
 def convert_trusts_csv():
+    from StringIO import StringIO
+    import zipfile
     urls = [
-        'https://nhsenglandfilestore.s3.amazonaws.com/ods/etr.csv',
-        'https://nhsenglandfilestore.s3.amazonaws.com/ods/ect.csv']
+        ('https://digital.nhs.uk/media/352/etr/zip/etr', 'etr.csv'),
+        ('https://digital.nhs.uk/media/349/ect/zip/ect', 'ect.csv')]
     with open('./_data/trusts.csv', 'wb') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(
             ['org_code', 'name', 'addr1', 'addr2', 'addr3',
              'city', 'county', 'postcode']
         )
-        for url in urls:
-            download = requests.get(url)
-            content = download.content
-            reader = csv.reader(content.splitlines(), delimiter=',')
+        for url, filename in urls:
+            response = requests.get(url)
+            csvzip = zipfile.ZipFile(StringIO(response.content))
+            csvfile = csvzip.open(filename)
+            reader = csv.reader(csvfile.readlines(), delimiter=',')
             for row in reader:
                 writer.writerow(
                     [
