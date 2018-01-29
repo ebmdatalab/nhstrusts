@@ -1,5 +1,5 @@
 # Site settings
-title: "AllTrials &ndash; Transparency index"
+title: "NHS Trusts Conflict of Interest scores"
 email: "your-email@domain.com"
 description: ""
 baseurl: ""
@@ -8,4 +8,4 @@ url: "http://yourdomain.com"
 markdown: "kramdown"
 # Tell Jekyll to ignore the vendor directory where we put gems, otherwise
 # it'll find stuff from the Jekyll gem and try to built that too
-exclude: [vendor]
+exclude: [vendor, script, README.md, conf]
