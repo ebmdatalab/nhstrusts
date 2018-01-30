@@ -51,12 +51,12 @@ def nhs_titlecase(words):
 
 
 def convert_trusts_csv():
-    from io import StringIO
+    from io import BytesIO
     import zipfile
     urls = [
         ('https://digital.nhs.uk/media/352/etr/zip/etr', 'etr.csv'),
         ('https://digital.nhs.uk/media/349/ect/zip/ect', 'ect.csv')]
-    with open('./_data/trusts.csv', 'wb') as csvfile:
+    with open('./_data/trusts.csv', 'w') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(
             ['org_code', 'name', 'addr1', 'addr2', 'addr3',
@@ -64,9 +64,11 @@ def convert_trusts_csv():
         )
         for url, filename in urls:
             response = requests.get(url)
-            csvzip = zipfile.ZipFile(StringIO(response.content))
-            csvfile = csvzip.open(filename)
-            reader = csv.reader(csvfile.readlines(), delimiter=',')
+            csvzip = zipfile.ZipFile(
+                BytesIO(response.content)
+            )
+            csvfile = csvzip.open(filename, 'r')
+            reader = csv.reader([x.decode('utf8') for x in csvfile.readlines()], delimiter=',')
             for row in reader:
                 writer.writerow(
                     [
@@ -89,10 +91,10 @@ def main():
     # Get the raw answers
     download = requests.get(RAW_SOURCE)
     content = download.content
-    reader = csv.reader(content.splitlines(), delimiter=',')
+    reader = csv.reader([x.decode('utf8') for x in content.splitlines()], delimiter=',')
     fieldnames = [x.lower().replace(' ', '_').replace('?', '')
-                  for x in reader.next()]
-    with open('./_data/hospitality-coi-raw.csv', 'wb') as csvfile:
+                  for x in next(reader)]
+    with open('./_data/hospitality-coi-raw.csv', 'w') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(fieldnames)
         for row in reader:
@@ -100,12 +102,12 @@ def main():
     # Get the scores
     download = requests.get(SCORES_SOURCE)
     content = download.content
-    reader = csv.reader(content.splitlines(), delimiter=',')
+    reader = csv.reader([x.decode('utf8') for x in content.splitlines()], delimiter=',')
     fieldnames = [x.lower().replace(' ', '_').replace('?', '')
-                  for x in reader.next()]
+                  for x in next(reader)]
     scores_with_entity = sorted(list(reader), key=lambda x: (-int(x[7]), x[1]))
     scores_only = [x[7] for x in scores_with_entity]
-    with open('./_data/hospitality-coi-scores.csv', 'wb') as csvfile:
+    with open('./_data/hospitality-coi-scores.csv', 'w') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(['rank'] + fieldnames)
         for i, (rank, row) in enumerate(Ranking(scores_only, start=1)):
