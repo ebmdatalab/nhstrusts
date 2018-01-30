@@ -51,7 +51,7 @@ def nhs_titlecase(words):
 
 
 def convert_trusts_csv():
-    from StringIO import StringIO
+    from io import StringIO
     import zipfile
     urls = [
         ('https://digital.nhs.uk/media/352/etr/zip/etr', 'etr.csv'),
