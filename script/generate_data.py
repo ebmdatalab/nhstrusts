@@ -1,7 +1,7 @@
 """
 Script to generate two CSVs required by the Jekyll app.
 
-Works off the Google Sheet referenced at `SOURCE`.
+Works off the Google Sheet referenced at `RAW_SOURCE` and `SCORES_SOURCE`.
 
 Places the results in `_data/`.
 
@@ -18,15 +18,17 @@ from titlecase import titlecase
 import requests
 
 
-# original: 1XYZZsRq50WsVjJfuCWNbEughXQqyiFJeW7tXGgdBv5I
-RAW_SOURCE = ('https://docs.google.com/spreadsheets/d/e/2PACX-1vS'
-              'B8VAyCgaiIxG04m7WkLUQMykHm67an6J3GlYQ6JrAAyEv4N_r1L'
-              'PaSpg3vqNgFWk5rjDth85bsUxH/pub?gid=0&single=true&output=csv')
-SCORES_SOURCE = ('https://docs.google.com/spreadsheets/d/e/'
-                 '2PACX-1vSB8VAyCgaiIxG04m7WkLUQMykHm67an6J'
-                 '3GlYQ6JrAAyEv4N_r1LPaSpg3vqNgFWk5rjDth85bsUxH/pub'
-                 '?gid=1987633112&single=true&output=csv')
-
+# The "Responses" worksheet with trust metadata and DOI referencesen
+RAW_SOURCE = ('https://docs.google.com/spreadsheets/d/e/'
+              '2PACX-1vSNGBQGHtzVN0j5QDQgYhnRzxSOdkj2Pe_'
+              'QXNp7KJOHXMM61iJ5-pjZbDEJle1T3CBvtq7CnECV'
+              'jO0N/pub?gid=0&single=true&output=csv')
+# The "Transparency Score" worksheet
+# Apparently wrong....
+SCORES_SOURCE = (
+    'https://docs.google.com/spreadsheets/d/e/2PACX-1vSNGB'
+    'QGHtzVN0j5QDQgYhnRzxSOdkj2Pe_QXNp7KJOHXMM61iJ5-pjZbDE'
+    'Jle1T3CBvtq7CnECVjO0N/pub?gid=1987633112&single=true&output=csv')
 
 def nhs_abbreviations(word, **kwargs):
     if len(word) == 2 and word.lower() not in [
