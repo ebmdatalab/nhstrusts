@@ -3,7 +3,7 @@ server {
     listen 80;
     listen [::]:80;
     server_name staging-coi.ebmdatalab.net;
-    root /var/www/nhscoi_staging/_site;
+    root /var/www/nhscoi_staging/nhstrusts/_site;
     resolver 8.8.8.8 8.8.4.4 valid=300s;
     resolver_timeout 5s;
 
