@@ -56,19 +56,19 @@ layout: default
             </td>
             <td class="transparency-ranking__table__score">{{ trust["total_score"] | times:20 }}%</td>
             <td class="transparency-ranking__table__responded">
-              {{ trust["responded_on_time"]|yesno }}
+              {{ trust["responded_on_time"]|tickcross }}
             </td>
             <td class="transparency-ranking__table__register">
-              {{ trust["sent_a_register"]|yesno }}
+              {{ trust["sent_a_register"]|tickcross }}
             </td>
             <td class="transparency-ranking__table__data">
-              {{trust["complete_data_structure"]|yesno }}
+              {{trust["complete_data_structure"]|tickcross }}
             </td>
             <td class="transparency-ranking__table__public">
-              {{trust["publically_accessible"]|yesno }}
+              {{trust["publically_accessible"]|tickcross }}
             </td>
             <td class="transparency-ranking__table__restrictive">
-              {{ trust["reusable_format"]|yesno }}
+              {{ trust["reusable_format"]|tickcross }}
             </td>
           </tr>
         {% endfor %}

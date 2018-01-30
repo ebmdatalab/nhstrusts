@@ -4,6 +4,17 @@ module Jekyll
     def yesno(input)
       if input and input.length == 1
         if input.downcase.strip == 'y' or input.to_i > 0
+          "<span class='ballotbox tick'>yes</span>"
+        else
+          "<span class='ballotbox cross'>no</span>"
+        end
+      else
+        input
+      end
+    end
+    def tickcross(input)
+      if input and input.length == 1
+        if input.downcase.strip == 'y' or input.to_i > 0
           "<span class='ballotbox tick'>☑</span>"
         else
           "<span class='ballotbox cross'>☒</span>"
