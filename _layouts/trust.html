@@ -107,8 +107,10 @@ layout: default
 
   <div class="company-body">
     <div class="container" id="js-company-tabs">
+    {% if page.raw_data.figshare_id != '1' %}
       <div id="sources" class="company-body__tabs__item">
         <h2 class="hide-if-javascript">Sources</h2>
+
         <p>This is the original documentation we got back from the organisation in response to our FOI request.</p>
         <!-- you can extract the ID from the DOI -->
         <iframe src="https://widgets.figshare.com/articles/{{page.raw_data.figshare_id}}/embed?show_title=1" width="568" height="351" frameborder="0"></iframe>
@@ -126,7 +128,10 @@ layout: default
           {% endfor %}
         </dl>
       </div>
-   </div>
+    {% else %}
+      <h2>This Trust did not respond to our FOI request.</h2>
+    {% endif %}
+    </div>
   </div>
 </div>
 
