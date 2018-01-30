@@ -10,6 +10,7 @@ To run:
     $ python script/generate_data.py
 """
 
+from ranking import Ranking
 import csv
 import re
 from titlecase import titlecase
@@ -102,12 +103,13 @@ def main():
     reader = csv.reader(content.splitlines(), delimiter=',')
     fieldnames = [x.lower().replace(' ', '_').replace('?', '')
                   for x in reader.next()]
-    scores = sorted(list(reader), key=lambda x: (-int(x[7]), x[1]))
+    scores_with_entity = sorted(list(reader), key=lambda x: (-int(x[7]), x[1]))
+    scores_only = [x[7] for x in scores_with_entity]
     with open('./_data/hospitality-coi-scores.csv', 'wb') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(['rank'] + fieldnames)
-        for rank, row in enumerate(scores, 1):
-            writer.writerow([rank] + row)
+        for i, (rank, row) in enumerate(Ranking(scores_only, start=1)):
+            writer.writerow([rank] + scores_with_entity[i])
     # Maintain these questions manually
     #with open('./_data/hospitality-coi-scores-questions.csv', 'wb') as csvfile:
     #    writer = csv.writer(csvfile)
