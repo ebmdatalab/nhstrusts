@@ -34,11 +34,15 @@ layout: default
     </div>
     <table class="transparency-ranking__table">
       <thead>
-        <tr>
-          <th>Rank</th>
-          <th>Name</th>
-          <th>Score</th>
-          <th class="transparency-ranking__table__chart">Breakdown</th>
+        <tr style="vertical-align: top">
+          <th class="transparency-ranking__table__rank">Rank</th>
+          <th class="transparency-ranking__table__name">Name</th>
+          <th class="transparency-ranking__table__score">Score</th>
+          <th class="transparency-ranking__table__responded">Responded <span class="tip" data-tip="Did they respond in time?"><span class="fas fa-info-circle"></span></span></th>
+          <th class="transparency-ranking__table__register">Register <span class="tip" data-tip="Did they supply a Conflict of Interest register?"><span class="fas fa-info-circle"></span></span></th>
+          <th class="transparency-ranking__table__data">Data <span class="tip" data-tip="Is the register in a machine-readable format?"><span class="fas fa-info-circle"></span></span></th>
+          <th class="transparency-ranking__table__public">Pubic <span class="tip" data-tip="Is the register available to the public?"><span class="fas fa-info-circle"></span></span></th>
+          <th class="transparency-ranking__table__restrictive">Reusable <span class="tip" data-tip="Is the register made available without restrictive licenses?"><span class="fas fa-info-circle"></span></span></th>
         </tr>
       </thead>
       <tbody>
@@ -51,36 +55,20 @@ layout: default
               </a>
             </td>
             <td class="transparency-ranking__table__score">{{ trust["total_score"] | times:20 }}%</td>
-            <td class="transparency-ranking__table__chart">
-              <div class="barchart barchart--simple">
-                <div class="barchart__draw">
-                  <span class="barchart__value barchart__value--ontime"
-                        title="Responded on time? {{ trust['responded_on_time']|yesno }}"
-                        style="width: {{ trust["responded_on_time"]|times:20 }}%">
-                    Responded on time: {{ trust["responded_on_time"] | times:20 }}%
-                  </span>
-                  <span class="barchart__value barchart__value--register"
-                        title="Sent a register? {{ trust['sent_a_register']|yesno }}"
-                        style="width: {{ trust["sent_a_register"]|times:20 }}%">
-                    Sent a register: {{ trust["sent_a_register"] | times:20 }}%
-                  </span>
-                  <span class="barchart__value barchart__value--structure"
-                        title="Provided complete data structure? {{ trust['complete_data_structure']|yesno }}"
-                        style="width: {{ trust["complete_data_structure"]|times:20 }}%">
-                    Complete data structure: {{ trust["complete_data_structure"] | times:20 }}%
-                  </span>
-                  <span class="barchart__value barchart__value--public"
-                        title="Publicly accessible? {{ trust['publically_accessible']|yesno }}"
-                        style="width: {{ trust["publically_accessible"]|times:20 }}%">
-                    Publicly accessible: {{ trust["publically_accessible"] | times:20 }}%
-                  </span>
-                  <span class="barchart__value barchart__value--reusable"
-                        title="Resuable format? {{ trust['reusable_format']|yesno }}"
-                        style="width: {{ trust['reusable_format']|times:20 }}%">
-                    Reusable format: {{ trust['reusable_format'] | times:20 }}%
-                  </span>
-                </div>
-              </div>
+            <td class="transparency-ranking__table__responded">
+              {{ trust["responded_on_time"]|yesno }}
+            </td>
+            <td class="transparency-ranking__table__register">
+              {{ trust["sent_a_register"]|yesno }}
+            </td>
+            <td class="transparency-ranking__table__data">
+              {{trust["complete_data_structure"]|yesno }}
+            </td>
+            <td class="transparency-ranking__table__public">
+              {{trust["publically_accessible"]|yesno }}
+            </td>
+            <td class="transparency-ranking__table__restrictive">
+              {{ trust["reusable_format"]|yesno }}
             </td>
           </tr>
         {% endfor %}

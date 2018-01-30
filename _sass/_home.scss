@@ -48,3 +48,167 @@
     border-color: darken($colour_light_grey, 5);
   }
 }
+
+
+.ballotbox {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.tick {
+  color: #75BC5D;
+  font-weight: 900;
+}
+
+.cross {
+  color: #E74040;
+}
+
+
+/*
+Tipr 3.2
+Copyright (c) 2017 Tipue
+Tipr is released under the MIT License
+http://www.tipue.com/tipr
+*/
+
+
+.tipr_content
+{
+     font: 300 11px/1.7 'Roboto Condensed', sans-serif;
+        color: #777;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+     background-color: #f3f3f3;
+     padding: 7px 14px 6px 14px;
+}
+.tipr_container_below
+{
+     display: none;
+     position: absolute;
+     margin-top: 7px;
+     z-index: 1000;
+}
+.tipr_container_above
+{
+     display: none;
+     position: absolute;
+     margin-top: -67px;
+     z-index: 1000;
+}
+.tipr_point_above, .tipr_point_below
+{
+     position: relative;
+        background: #f3f3f3;
+        border: 1px solid #f3f3f3;
+        border-radius: 1px;
+}
+.tipr_point_above:after, .tipr_point_above:before
+{
+        position: absolute;
+        pointer-events: none;
+        border: solid transparent;
+        top: 100%;
+        content: "";
+        height: 0;
+        width: 0;
+}
+.tipr_point_above:after
+{
+        border-top-color: #f3f3f3;
+        border-width: 8px;
+        left: 50%;
+        margin-left: -8px;
+}
+.tipr_point_above:before
+{
+        border-top-color: #f3f3f3;
+        border-width: 9px;
+        left: 50%;
+        margin-left: -9px;
+}
+.tipr_point_below:after, .tipr_point_below:before
+{
+        position: absolute;
+        pointer-events: none;
+        border: solid transparent;
+        bottom: 100%;
+        content: "";
+        height: 0;
+        width: 0;
+}
+.tipr_point_below:after
+{
+        border-bottom-color: #f3f3f3;
+        border-width: 8px;
+        left: 50%;
+        margin-left: -8px;
+}
+.tipr_point_below:before
+{
+        border-bottom-color: #f3f3f3;
+        border-width: 9px;
+        left: 50%;
+        margin-left: -9px;
+}
+
+/* help icon */
+.infolink:before
+{
+    content: '?';
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    width: 1.8ex;
+    height: 1.8ex;
+    font-size: 1.4ex;
+    line-height: 1.8ex;
+    border-radius: 1.2ex;
+    margin-right: 4px;
+    padding: 1px;
+    color: blue;
+    background: white;
+    border: 1px solid blue;
+    text-decoration: none;
+}
+
+.infolink:hover:before
+{
+    color: white;
+    background: blue;
+    border-color: white;
+    text-decoration: none;
+}
+
+/* table width */
+
+
+
+
+
+
+
+.transparency-ranking__table__rank {
+  width: 5%;
+}
+.transparency-ranking__table__name {
+  width: 35%;
+}
+.transparency-ranking__table__score {
+  width: 10%;
+}
+.transparency-ranking__table__responded {
+  width: 10%;
+}
+.transparency-ranking__table__register {
+  width: 10%;
+}
+.transparency-ranking__table__data {
+  width: 10%;
+}
+.transparency-ranking__table__public {
+  width: 10%;
+}
+.transparency-ranking__table__restrictive {
+  width: 10%;
+}
