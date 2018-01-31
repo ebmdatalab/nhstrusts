@@ -112,8 +112,20 @@ def main():
     with open('./_data/hospitality-coi-scores.csv', 'w') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(['rank'] + fieldnames)
-        for i, (rank, row) in enumerate(Ranking(scores_only, start=1)):
+        prev_rank = None
+        current_rank = 1
+        enumerated_ranking = list(enumerate(Ranking(scores_only, start=1)))
+        for i, (rank, row) in enumerated_ranking:
+            current_rank = rank
+            if (i + 1) < len(enumerated_ranking):
+                next_rank = enumerated_ranking[i + 1][0]
+            else:
+                next_rank = None
+            if prev_rank == current_rank or next_rank == current_rank:
+                rank = "={}".format(rank)
             writer.writerow([rank] + scores_with_entity[i])
+            prev_rank = current_rank
+
     # Maintain these questions manually
     #with open('./_data/hospitality-coi-scores-questions.csv', 'wb') as csvfile:
     #    writer = csv.writer(csvfile)
