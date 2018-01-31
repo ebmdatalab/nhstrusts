@@ -2,4 +2,4 @@
 set -e
 python ./deploy/generate_data.py
 bundle install --deployment --path vendor/bundle
-bundle exec jekyll build
+bundle exec jekyll build --trace
