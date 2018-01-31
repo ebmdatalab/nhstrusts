@@ -45,7 +45,7 @@ def setup_nginx():
 
 def post_deploy():
     with prefix('source venv/bin/activate'):
-        run('cd nhstrusts && ./script/post-deploy')
+        run('cd nhstrusts && ./deploy/post-deploy')
 
 @task
 def deploy(environment, branch='master'):

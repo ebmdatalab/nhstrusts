@@ -1,5 +1,5 @@
 #!/bin/bash
 set -e
-python ./script/generate_data.py
+python ./deploy/generate_data.py
 bundle install --deployment --path vendor/bundle
 bundle exec jekyll build

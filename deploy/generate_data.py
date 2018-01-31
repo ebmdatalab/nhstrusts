@@ -7,7 +7,7 @@ Places the results in `_data/`.
 
 To run:
 
-    $ python script/generate_data.py
+    $ python deploy/generate_data.py
 """
 
 from ranking import Ranking
