@@ -12,6 +12,11 @@ To install, make a file at `./conf/general.yml` using the example in that folder
 
 Then set up a web server with its document root pointing to `./_site/`.
 
+# Notes
+
+This depends on two worksheets in one Google Sheet.
+
+The two worksheets are joined by the "org code" column which must be consistent between them.
 
 # Sources
 
