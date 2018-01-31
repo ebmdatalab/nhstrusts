@@ -15,9 +15,9 @@ module Jekyll
     def tickcross(input)
       if input and input.length == 1
         if input.downcase.strip == 'y' or input.to_i > 0
-          "<span class='ballotbox tick'>☑</span>"
+          "<span class='ballotbox tick'><i class='far fa-check-square'></i></span>"
         else
-          "<span class='ballotbox cross'>☒</span>"
+          "<span class='ballotbox cross'><i class='far fa-square'></i></span>"
         end
       else
         input
