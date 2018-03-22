@@ -6,7 +6,7 @@ requesting Conflict of Interest registers from evey Trust in England.
 
 To install, make a file at `./conf/general.yml` using the example in that folder, then run:
 
-    ./script/post-deploy
+    ./deploy/post-deploy
 
 Then set up a web server with its document root pointing to `./_site/`
 (see the contents of the `deploy/` directory for example nginx config)
