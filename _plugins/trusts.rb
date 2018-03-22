@@ -23,7 +23,7 @@ module Jekyll
           scores['complete_data_structure'].to_i,
           scores['publically_accessible'].to_i,
           scores['reusable_format'].to_i
-        ].reduce(:+)
+        ].reduce(:+) * 20
       end
       self.data['raw_data_questions'] = site.data['hospitality-coi-questions'][0]
     end
