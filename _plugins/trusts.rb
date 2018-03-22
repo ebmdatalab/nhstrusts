@@ -16,6 +16,15 @@ module Jekyll
       self.data['title'] = trust['name']
       self.data['raw_data'] = raw_data
       self.data['scores'] = scores
+      if scores.length > 0
+        self.data['scores']['percentage'] = [
+          scores['responded_on_time'].to_i,
+          scores['sent_a_register'].to_i,
+          scores['complete_data_structure'].to_i,
+          scores['publically_accessible'].to_i,
+          scores['reusable_format'].to_i
+        ].reduce(:+)
+      end
       self.data['raw_data_questions'] = site.data['hospitality-coi-questions'][0]
     end
   end

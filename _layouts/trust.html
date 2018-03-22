@@ -7,7 +7,7 @@ layout: default
     <div class="container">
       <div class="dark-header__title-area">
         <p class="dark-header__subhead">
-          How transparent are {{ page.trust['name'] }}&rsquo;s clinical trials?
+          What do the conflict of interest disclosures for {{ page.trust['name'] }} look like?
         </p>
         <h1 class="dark-header__company-name">
           {{ page.trust['name'] }}
@@ -40,35 +40,35 @@ layout: default
         </div>
         <div class="score-breakdown">
           <div class="barchart barchart--simple">
-            <span class="barchart__label">Responded on time</span>
+            <span class="barchart__label"><span class="tip" data-tip="Did the Trust respond to the FoIA request within 20 working days, as mandated by law?"><span class="fas fa-info-circle"></span></span> Responded on time</span>
             <span class="barchart__text-value"><strong>{{ page.scores['responded_on_time']|yesno }}</strong></span>
             <div class="barchart__draw">
               <span class="barchart__value barchart__value--ontime" style="width: 100%"></span>
             </div>
           </div>
           <div class="barchart barchart--simple">
-            <span class="barchart__label">Sent a register</span>
+            <span class="barchart__label"><span class="tip" data-tip="Did the Trust send a register at all?"><span class="fas fa-info-circle"></span></span> Sent a register</span>
             <span class="barchart__text-value"><strong>{{ page.scores['sent_a_register']|yesno }}</strong></span>
             <div class="barchart__draw">
               <span class="barchart__value barchart__value--register" style="width: 100%"></span>
             </div>
           </div>
           <div class="barchart barchart--simple">
-            <span class="barchart__label">Complete data structure</span>
+            <span class="barchart__label"><span class="tip" data-tip="Does the register contain at least the name of the recipient, the name of the donor, and the cash amount for each disclosure?"><span class="fas fa-info-circle"></span></span> Complete data structure</span>
             <span class="barchart__text-value"><strong>{{ page.scores['complete_data_structure']|yesno }}</strong></span>
             <div class="barchart__draw">
               <span class="barchart__value barchart__value--structure" style="width: 100%"></span>
             </div>
           </div>
           <div class="barchart barchart--simple">
-            <span class="barchart__label">Publicly acccessible</span>
+            <span class="barchart__label"><span class="tip" data-tip="Was the register publicly available online at the time of the request?"><span class="fas fa-info-circle"></span></span> Publicly acccessible</span>
             <span class="barchart__text-value"><strong>{{ page.scores['publically_accessible']|yesno }}</strong></span>
             <div class="barchart__draw">
               <span class="barchart__value  barchart__value--public" style="width: 100%"></span>
             </div>
           </div>
           <div class="barchart barchart--simple">
-            <span class="barchart__label">Reusable format</span>
+            <span class="barchart__label"><span class="tip" data-tip="Was the information provided in a format, such as a spreadsheet, that could be used for further analysis?"><span class="fas fa-info-circle"></span></span> Reusable format</span>
             <span class="barchart__text-value"><strong>{{ page.scores['reusable_format']|yesno }}</strong></span>
             <div class="barchart__draw">
               <span class="barchart__value  barchart__value--reusable" style="width: 100%"></span>
@@ -83,12 +83,26 @@ layout: default
               Transparency rank
             </p>
             <p class="metric__value">
-              {{ page.scores['rank']|ordinal }}
+              {{ page.scores['rank'] }}
             </p>
           </div>
         </div>
 
-        <p class="intro">Executive summary Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a fringilla dui. Pellentesque ullamcorper, nisl at viverra luctus, mauris arcu maximus mi, et ullamcorper libero elit id tellus. </p>
+        <p class="intro">
+          {{ page.trust['name'] }} achieved a transparency score of {{ page.scores['percentage'] }}%. This placed them {{ page.scores['rank'] }} within all Trusts in England. </p>
+        <p>Based on this score it is <strong>
+          {% if page.scores['percentage'] >= 80 %}
+            likely
+          {% else if page.scores['percentage'] >= 60 %}
+            somewhat likely
+          {% else if page.scores['percentage'] >= 40 %}
+            unlikely
+          {% else if page.scores['percentage'] >= 20 %}
+            very unlikely
+          {% else page.scores['percentage'] >= 80 %}
+            impossible
+          {% endif %} </strong> you could find out about potential conflicts of interest held by the people who are treating you.
+        </p>
       </div>
 
     </div>
