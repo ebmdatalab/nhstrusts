@@ -1,4 +1,11 @@
-# Listen on HTTPS
+# Redirects to match what was in our paper
+server {
+    listen 80;
+    listen [::]:80;
+    server_name www.theycareforyou.org theycareforyou.org;
+    rewrite ^/.*$ https://coi.theycareforyou.org permanent;
+}
+
 server {
     listen 80;
     listen [::]:80;
