@@ -36,8 +36,8 @@ def update_from_git():
         run("git clone -q git@github.com:ebmdatalab/nhstrusts.git")
     else:
         with cd("nhstrusts"):
-            run("git pull -q")
-
+            run("git fetch --all")
+            run("git reset --hard origin/master")
 
 def setup_nginx():
     run('ln -sf %s/nhstrusts/deploy/nginx-%s /etc/nginx/sites-enabled/%s' % (env.path, env.app, env.app))
