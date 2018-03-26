@@ -4,11 +4,11 @@ title: About the project
 permalink: /about/
 ---
 
-When doctors and other healthcare professionals receive payments or gifts, it creates a conflict of interest that could impact the choices they make around procurement, research, and ultimately the care they give to patients. A conflict does not mean that someone is doing something wrong: but it is vital that these payments are disclosed appropriately and transparently. NHS England advises that all NHS trusts should maintain a Gifts and Hospitality Register in which all staff can declare potential conflicts of interest. We decided to see which trusts were keeping these registers and what they looked like. Through Freedom of Information Act (FoIA) requests, we asked every NHS trust in England to provide their Gifts and Hospitality Register as well as information on any disciplinary action taken due to conflicts of interest. We then assessed each response and shared the results, both in a [paper]() and on this website.
+When doctors and other healthcare professionals receive payments or gifts, it creates a conflict of interest that could impact the choices they make around procurement, research, and ultimately the care they give to patients. A conflict does not mean that someone is doing something wrong: but it is vital that these payments are disclosed appropriately and transparently. NHS England advises that all NHS trusts should maintain a Gifts and Hospitality Register in which all staff can declare potential conflicts of interest. We decided to see which trusts were keeping these registers and what they looked like. Through Freedom of Information Act (FoIA) requests, we asked every NHS trust in England to provide their Gifts and Hospitality Register as well as information on any disciplinary action taken due to conflicts of interest. We then assessed each response and shared the results, both in a [paper](http://bmjopen.bmj.com/lookup/doi/10.1136/bmjopen-2017-019952) and on this website.
 
 ## I’m concerned by your findings! What should happen next?
 
-We think NHS Trusts should collect simple complete data on conflicts of interest, and disclose this routinely online, as we say in our paper. We also think the NHS, the GMC, and other professional regulators should mandate disclosure. Transparency is the best way to build trust in healthcare.
+We think NHS Trusts should collect simple complete data on conflicts of interest, and disclose this routinely online, as we say in [our paper](http://bmjopen.bmj.com/lookup/doi/10.1136/bmjopen-2017-019952). We also think the NHS, the GMC, and other professional regulators should mandate disclosure. Transparency is the best way to build trust in healthcare.
 
 ## About the people
 
