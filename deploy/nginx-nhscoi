@@ -15,7 +15,7 @@ server {
     resolver_timeout 5s;
 
     client_max_body_size 200M;
-
+    error_page 404 /404.html;
     location / {
         access_log /var/log/nginx/nhscoi.access.log;
         error_log /var/log/nginx/nhscoi.error.log;

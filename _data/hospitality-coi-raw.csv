@@ -1,237 +1,237 @@
 number,org_code,trust,received,responded_on_time,data_format,adequate_data_format,section_cited,reason_for_refusal,comment,publicly_available,patient_information,recipient_(named),donor,cash_amount,disciplinary,referred_to_abpi,doi
-232,R1A,Worcestershire Health and Care NHS Trust,Y,Y,Excel,Y,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5773278
-168,R1C,Solent NHS Trust,Y,Y,PDF,N,,,,N,N,N,N,N,0,,10.6084/m9.figshare.5648092
-167,R1D,Shropshire Community Health NHS Trust,Y,Y,Embedded text,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5648089
-186,R1E,Staffordshire and Stoke On Trent Partnership NHS Trust,Y,Y,PDF,N,,,,N,N,N,N,N,0,,10.6084/m9.figshare.5773086
-86,R1F,Isle Of Wight NHS Trust,Y,Y,Excel,Y,,,,N,N,N,Y,N,0,Y,10.6084/m9.figshare.5426719
-11,R1H,Barts Health NHS Trust,Y,Y,PDF,N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5404615
-68,R1J,Gloucestershire Care Services NHS Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,0,Y,10.6084/m9.figshare.5405206
-106,R1K,London North West Healthcare NHS Trust,Y,Y,Word,N,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5433154
-157,RA2,Royal Surrey County NHS Foundation Trust,N,N,x,N,12,Paper only,,N,,,,,0,,
-228,RA3,Weston Area Health NHS Trust,Y,Y,Word,N,,,,N,N,N,N,N,0,,10.6084/m9.figshare.5773257
-235,RA4,Yeovil District Hospital NHS Foundation Trust,N,N,x,N,,No response,,N,,,,,,,
-216,RA7,University Hospitals Bristol NHS Foundation Trust,Y,N,"PDF, Excel",N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5773191
-210,RA9,Torbay and South Devon NHS Foundation Trust,Y,N,PDF,N,,,,N,N,N,Y,Y,1,,10.6084/m9.figshare.5773167
-23,RAE,Bradford Teaching Hospitals NHS Foundation Trust,N,N,x,N,,No response,,N,,,,,,,
-181,RAJ,Southend University Hospital NHS Foundation Trust,N,N,x,N,,No response,,N,,,,,,,
-154,RAL,Royal Free London NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5648032
-125,RAP,North Middlesex University Hospital NHS Trust,N,Y,x,N,,No register held,Sent redacted ABPI,N,,,,,0,Y,
-199,RAS,The Hillingdon Hospitals NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5773128
-123,RAT,North East London NHS Foundation Trust,Y,N,Excel,Y,,,,N,N,N,Y,N,0,,10.6084/m9.figshare.5468695
-92,RAX,Kingston Hospital NHS Foundation Trust,Y,N,Excel,Y,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5433043
-193,RBA,Taunton and Somerset NHS Foundation Trust,Y,Y,"Embedded text, Excel",N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5773107
-53,RBD,Dorset County Hospital NHS Foundation Trust,N,N,x,N,,No response,,N,,,,,,,
-221,RBK,Walsall Healthcare NHS Trust,Y,Y,PDF,N,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5773221
-230,RBL,Wirral University Teaching Hospital NHS Foundation Trust,N,N,x,N,,No response,,N,,,,,,,
-185,RBN,St Helens and Knowsley Hospitals NHS Trust,N,N,x,N,,No response,,N,,,,,,,
-103,RBQ,Liverpool Heart and Chest NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,N,N,0,,10.6084/m9.figshare.5433139
-5,RBS,Alder Hey Children's NHS Foundation Trust,Y,Y,Embedded text,N,,,,N,N,N,N,N,0,,10.6084/m9.figshare.5402449
-112,RBT,Mid Cheshire Hospitals NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5433184
-196,RBV,The Christie NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,N,Y,Y,1,,10.6084/m9.figshare.5773116
-131,RBZ,Northern Devon Healthcare NHS Trust,Y,Y,PDF,N,,,,N,N,N,N,N,0,,10.6084/m9.figshare.5468809
-13,RC1,Bedford Hospital NHS Trust,N,N,x,N,12,Paper only,,N,,,,,0,,
-107,RC9,Luton and Dunstable University Hospital NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,Y,Y,N,0,,10.6084/m9.figshare.5433160
-236,RCB,York Teaching Hospital NHS Foundation Trust,Y,N,Excel,Y,40,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5773314
-75,RCD,Harrogate and District NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5405287
-4,RCF,Airedale NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5402443
-162,RCU,Sheffield Children's NHS Foundation Trust,N,N,x,N,,No response,,N,,,,,,,
-202,RCX,"The Queen Elizabeth Hospital, King's Lynn. NHS Foundation Trust",Y,N,Word,N,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5773140
-158,RD1,Royal United Hospitals Bath NHS Foundation Trust,Y,Y,PDF,N,40,,,N,N,N,Y,N,0,Y,10.6084/m9.figshare.5648044
-145,RD3,Poole Hospital NHS Foundation Trust,N,N,x,N,,No register held,,N,,,,,0,Y,
-115,RD8,Milton Keynes University Hospital NHS Foundation Trust,Y,Y,"Embedded text, PDF",N,,,,N,N,N,Y,N,0,Y,10.6084/m9.figshare.5433244
-12,RDD,Basildon and Thurrock University Hospitals NHS Foundation Trust,Y,Y,Word,N,40,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5404624
-40,RDE,Colchester Hospital University NHS Foundation Trust,N,Y,x,N,,No register held,Sent redacted ABPI,N,,,,,1,Y,
-190,RDR,Sussex Community NHS Foundation Trust,N,Y,x,N,12,Paper only,,N,,,,,0,,
-65,RDU,Frimley Health NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5405116
-54,RDY,Dorset Healthcare University NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,N,N,0,,10.6084/m9.figshare.5404933
-204,RDZ,The Royal Bournemouth and Christchurch Hospitals NHS Foundation Trust,Y,N,PDF,N,,,Does not cover all staff - only band 8a and above,N,N,N,Y,Y,2,,10.6084/m9.figshare.5773149
-176,RE9,South Tyneside NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,Y,Y,N,0,,10.6084/m9.figshare.5773071
-152,REF,Royal Cornwall Hospitals NHS Trust,Y,Y,Embedded text,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5627353
-3,REM,Aintree University Hospital NHS Foundation Trust,N,N,x,N,,No response,,N,,,,,,,
-197,REN,The Clatterbridge Cancer Centre NHS Foundation Trust,Y,Y,Word,N,,,,N,N,Y,Y,N,0,,10.6084/m9.figshare.5773119
-104,REP,Liverpool Women's NHS Foundation Trust,N,N,x,N,,No response,,N,,,,,,,
-208,RET,The Walton Centre NHS Foundation Trust,Y,Y,PDF,N,,,,Y,N,N,Y,Y,0,,10.6084/m9.figshare.5773161
-8,RF4,"Barking, Havering and Redbridge University Hospitals NHS Trust",Y,Y,Excel,Y,,,,N,N,N,Y,N,0,,10.6084/m9.figshare.5404597
-10,RFF,Barnsley Hospital NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5404612
-203,RFR,The Rotherham NHS Foundation Trust,Y,Y,Embedded text,N,,,,Y,N,N,Y,Y,0,,10.6084/m9.figshare.5773146
-38,RFS,Chesterfield Royal Hospital NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5404795
-95,RGD,Leeds and York Partnership NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,N,N,N,0,,10.6084/m9.figshare.5433091
-140,RGM,Papworth Hospital NHS Foundation Trust,Y,N,PDF,N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5472436
-143,RGN,Peterborough and Stamford Hospitals NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5472454
-87,RGP,James Paget University Hospitals NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,N,N,1,,10.6084/m9.figshare.5426722
-85,RGQ,Ipswich Hospital NHS Trust,N,Y,x,N,12,No register held,,N,,,,,0,,
-226,RGR,West Suffolk Hospital NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5773236
-29,RGT,Cambridge University Hospitals NHS Foundation Trust,Y,Y,Excel,Y,,,,Y,N,N,Y,Y,0,,10.6084/m9.figshare.5404729
-169,RH5,Somerset Partnership NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5773056
-153,RH8,Royal Devon and Exeter NHS Foundation Trust,Y,N,Excel,Y,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5648020
-136,RHA,Nottinghamshire Healthcare NHS Foundation Trust,Y,Y,PDF,N,,,,Y,N,Y,Y,Y,0,Y,10.6084/m9.figshare.5468929
-215,RHM,University Hospital Southampton NHS Foundation Trust,Y,N,PDF,N,,,Latest (6th December),N,N,Y,N,Y,0,,10.6084/m9.figshare.5773188
-164,RHQ,Sheffield Teaching Hospitals NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5648083
-146,RHU,Portsmouth Hospitals NHS Trust,Y,Y,Excel,Y,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5472457
-150,RHW,Royal Berkshire NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5627332
-73,RJ1,Guy's and St Thomas' NHS Foundation Trust,N,N,x,N,12,No register held,,N,,,,,0,,
-99,RJ2,Lewisham and Greenwich NHS Trust,Y,Y,Word,N,,,,N,N,N,Y,Y,1,,10.6084/m9.figshare.5433115
-45,RJ6,Croydon Health Services NHS Trust,Y,Y,Excel,Y,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5404819
-184,RJ7,St George's University Hospitals NHS Foundation Trust,N,N,x,N,,No register held,,N,,,,,0,,
-41,RJ8,Cornwall Partnership NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5404801
-177,RJC,South Warwickshire NHS Foundation Trust,N,Y,x,N,,No register held,Sent information from ABPI,N,,,,,0,Y,
-220,RJE,University Hospitals of North Midlands,Y,Y,Excel,Y,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5773206
-27,RJF,Burton Hospitals NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5404723
-132,RJL,Northern Lincolnshire and Goole NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5468821
-57,RJN,East Cheshire NHS Trust,Y,Y,Embedded text,N,,,,Y,N,N,Y,Y,0,,10.6084/m9.figshare.5404978
-42,RJR,Countess Of Chester Hospital NHS Foundation Trust,Y,Y,Word,N,,,,N,N,N,Y,N,0,,10.6084/m9.figshare.5404804
-91,RJZ,King's College Hospital NHS Foundation Trust,N,N,x,N,12,No register held,,N,,,,,0,,
-165,RK5,Sherwood Forest Hospitals NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5648086
-144,RK9,Plymouth Hospitals NHS Trust,N,N,x,N,,No response,,N,,,,,,,
-217,RKB,University Hospitals Coventry and Warwickshire NHS Trust,N,N,x,N,,No response,,N,,,,,,,
-209,RKE,The Whittington Hospital NHS Trust,Y,Y,PDF,N,,,Scanned paper forms,N,N,N,Y,Y,0,,10.6084/m9.figshare.5773164
-224,RKL,West London Mental Health NHS Trust,Y,N,PDF,N,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5773230
-148,RL1,Robert Jones and Agnes Hunt Orthopaedic and District Hospital NHS Trust,Y,N,PDF,N,,,Referred to ABPI then said they weren't bound by 'Sunshine Rules',N,N,N,Y,Y,0,Y,10.6084/m9.figshare.5627275
-207,RL4,The Royal Wolverhampton NHS Trust,Y,N,PDF,N,,,,N,N,N,N,N,0,,10.6084/m9.figshare.5773158
-39,RLN,City Hospitals Sunderland NHS Foundation Trust,N,N,x,N,,No response,,N,,,,,,,
-234,RLQ,Wye Valley NHS Trust,Y,Y,Excel,Y,,,,N,N,Y,Y,N,0,,10.6084/m9.figshare.5773305
-67,RLT,George Eliot Hospital NHS Trust,Y,Y,Word,N,,,,N,Y,Y,Y,N,0,,10.6084/m9.figshare.5405179
-18,RLU,Birmingham Women's NHS Foundation Trust,N,Y,x,N,,Technical issue,,N,,,,,0,,
-126,RLY,North Staffordshire Combined Healthcare NHS Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5468713
-117,RM1,Norfolk and Norwich University Hospitals NHS Foundation Trust,N,N,x,N,,No response,,N,,,,,,,
-214,RM2,University Hospital Of South Manchester NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5773179
-159,RM3,Salford Royal NHS Foundation Trust,Y,Y,PDF,N,,,,Y,N,N,N,N,0,,10.6084/m9.figshare.5648056
-21,RMC,Bolton NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5404669
-192,RMP,Tameside and Glossop Integrated Care NHS Foundation Trust,Y,N,Embedded text,N,,,Originally sent link to the ABPI,N,N,N,N,Y,0,Y,10.6084/m9.figshare.5773104
-118,RMY,Norfolk and Suffolk NHS Foundation Trust,Y,N,"PDF, Excel",N,,,,N,Y,N,N,Y,0,,10.6084/m9.figshare.5468674
-71,RN3,Great Western Hospitals NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5405269
-74,RN5,Hampshire Hospitals NHS Foundation Trust,Y,Y,PDF,N,40,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5405284
-47,RN7,Dartford and Gravesham NHS Trust,Y,Y,PDF,N,40,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5404861
-198,RNA,The Dudley Group NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5773122
-194,RNK,Tavistock and Portman NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5773110
-121,RNL,North Cumbria University Hospitals NHS Trust,N,N,x,N,,None given,Sent redacted ABPI,N,,,,,0,Y,
-46,RNN,Cumbria Partnership NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5404846
-90,RNQ,Kettering General Hospital NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5426737
-129,RNS,Northampton General Hospital NHS Trust,Y,Y,PDF,N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5468773
-137,RNU,Oxford Health NHS Foundation Trust,Y,Y,Word,N,,,,Y,N,Y,Y,Y,0,,10.6084/m9.figshare.5469325
-160,RNZ,Salisbury NHS Foundation Trust,Y,N,PDF,N,40,,,N,N,Y,N,Y,0,,10.6084/m9.figshare.5648065
-130,RP1,Northamptonshire Healthcare NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,Y,Y,N,0,,10.6084/m9.figshare.5468803
-70,RP4,Great Ormond Street Hospital for Children NHS Foundation Trust,Y,Y,PDF,N,,,,Y,N,Y,N,N,1,,10.6084/m9.figshare.5405236
-52,RP5,Doncaster and Bassetlaw Hospitals NHS Foundation Trust,Y,Y,Word,N,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5404930
-116,RP6,Moorfields Eye Hospital NHS Foundation Trust,Y,Y,Embedded text,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5433259
-101,RP7,Lincolnshire Partnership NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5433124
-110,RPA,Medway NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5433178
-147,RPC,Queen Victoria Hospital NHS Foundation Trust,N,N,x,N,,No response,,N,,,,,,,
-139,RPG,Oxleas NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,N,N,Y,1,,10.6084/m9.figshare.5472433
-205,RPY,The Royal Marsden NHS Foundation Trust,N,Y,x,N,,No register held,Referred direct to ABPI,N,,,,,1,Y,
-16,RQ3,Birmingham Children's Hospital NHS Foundation Trust,N,Y,x,N,,Technical issue,,N,,,,,0,,
-155,RQ6,Royal Liverpool and Broadgreen University Hospitals NHS Trust,Y,Y,Excel,Y,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5648038
-113,RQ8,Mid Essex Hospital Services NHS Trust,Y,N,Embedded text,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5433187
-36,RQM,Chelsea and Westminster Hospital NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,2,,10.6084/m9.figshare.5404783
-79,RQQ,Hinchingbrooke Health Care NHS Trust,N,N,x,N,,No register held,,N,,,,,0,,
-201,RQW,The Princess Alexandra Hospital NHS Trust,N,Y,x,N,,No entries,,N,,,,,2,,
-80,RQX,Homerton University Hospital NHS Foundation Trust,Y,N,Excel,Y,,,,N,N,N,N,N,0,,10.6084/m9.figshare.5426689
-178,RQY,South West London and St George's Mental Health NHS Trust,Y,Y,Word,N,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5773074
-76,RR1,Heart Of England NHS Foundation Trust,N,Y,x,N,,No register held,,N,,,,,0,,
-66,RR7,Gateshead Health NHS Foundation Trust,Y,Y,Word,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5405140
-97,RR8,Leeds Teaching Hospitals NHS Trust,Y,Y,Web page,N,,,http://www.leedsth.nhs.uk/about-us/freedom-of-information/publication-scheme/lists-and-registers/declarations/,Y,N,Y,N,Y,0,,10.6084/m9.figshare.5433097
-124,RRD,North Essex Partnership University NHS Foundation Trust,Y,N,PDF,N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5468698
-174,RRE,South Staffordshire and Shropshire Healthcare NHS Foundation Trust,Y,Y,Excel,Y,,,No entries,N,Y,N,Y,Y,0,,10.6084/m9.figshare.5773068
-233,RRF,"Wrightington, Wigan and Leigh NHS Foundation Trust",Y,N,Word,N,,,,N,N,N,Y,Y,0,Y,10.6084/m9.figshare.5773290
-206,RRJ,The Royal Orthopaedic Hospital NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5773155
-213,RRK,University Hospital Birmingham NHS Foundation Trust,N,N,x,N,,No register held,Claim it is not needed,N,,,,,0,,
-9,RRP,"Barnet, Enfield and Haringey Mental Health NHS Trust",Y,Y,PDF,N,,,,N,Y,N,Y,Y,0,,10.6084/m9.figshare.5404600
-105,RRU,London Ambulance Service NHS Trust,Y,Y,PDF,N,,,,N,N,Y,Y,N,0,,10.6084/m9.figshare.5433148
-212,RRV,University College London Hospitals NHS Foundation Trust,Y,N,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5773170
-30,RT1,Cambridgeshire and Peterborough NHS Foundation Trust,Y,Y,PDF,N,,,,N,Y,Y,Y,Y,0,,10.6084/m9.figshare.5404732
-142,RT2,Pennine Care NHS Foundation Trust,Y,Y,Embedded text,N,,,,Y,N,N,Y,Y,0,,10.6084/m9.figshare.5472448
-151,RT3,Royal Brompton and Harefield NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,Y,N,Y,0,,10.6084/m9.figshare.5627350
-98,RT5,Leicestershire Partnership NHS Trust,Y,Y,PDF,N,,,,Y,Y,N,Y,Y,0,,10.6084/m9.figshare.5433112
-200,RTD,The Newcastle Upon Tyne Hospitals NHS Foundation Trust,Y,N,Word,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5773137
-69,RTE,Gloucestershire Hospitals NHS Foundation Trust,N,N,x,N,,No register held,,N,,,,,,,
-134,RTF,Northumbria Healthcare NHS Foundation Trust,Y,N,Excel,Y,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5468866
-48,RTG,Derby Teaching Hospitals NHS Foundation Trust,Y,Y,Excel,Y,40,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5404879
-138,RTH,Oxford University Hospitals NHS Foundation Trust,Y,N,PDF,N,40,,,N,N,N,N,N,0,,10.6084/m9.figshare.5472430
-6,RTK,Ashford and St Peter's Hospitals NHS Foundation Trust,Y,Y,Word,N,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5402467
-189,RTP,Surrey and Sussex Healthcare NHS Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5773092
 1,RTQ,2gether NHS Foundation Trust,Y,Y,Embedded text,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5402419
-175,RTR,South Tees Hospitals NHS Foundation Trust,N,N,x,N,,No register held,Sent redacted ABPI,N,,,,,0,Y,
 2,RTV,5 Boroughs Partnership NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5402428
-219,RTX,University Hospitals Of Morecambe Bay NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5773200
-33,RV3,Central and North West London NHS Foundation Trust,Y,Y,Embedded text,N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5404756
-173,RV5,South London and Maudsley NHS Foundation Trust,Y,Y,Excel,Y,,,,N,Y,N,Y,Y,1,,10.6084/m9.figshare.5773065
-83,RV9,Humber NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5426713
-120,RVJ,North Bristol NHS Trust,Y,N,Excel,Y,,,,N,N,Y,Y,N,0,,10.6084/m9.figshare.5468686
+3,REM,Aintree University Hospital NHS Foundation Trust,N,N,x,N,,No response,,N,,,,,,,
+4,RCF,Airedale NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5402443
+5,RBS,Alder Hey Children's NHS Foundation Trust,Y,Y,Embedded text,N,,,,N,N,N,N,N,0,,10.6084/m9.figshare.5402449
+6,RTK,Ashford and St Peter's Hospitals NHS Foundation Trust,Y,Y,Word,N,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5402467
 7,RVN,Avon and Wiltshire Mental Health Partnership NHS Trust,Y,Y,Embedded text,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5402473
-64,RVR,Epsom and St Helier University Hospitals NHS Trust,N,N,x,N,,No entries,,N,,,,,0,,
-58,RVV,East Kent Hospitals University NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5404981
-127,RVW,North Tees and Hartlepool NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5468728
-183,RVY,Southport and Ormskirk Hospital NHS Trust,N,N,x,N,12,Paper only,,N,,,,,0,,
-182,RW1,Southern Health NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5773083
-35,RW3,Central Manchester University Hospitals NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,N,N,0,,10.6084/m9.figshare.5404780
-111,RW4,Mersey Care NHS Foundation Trust,Y,N,Word,N,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5433181
-93,RW5,Lancashire Care NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5433061
-141,RW6,Pennine Acute Hospitals NHS Trust,Y,Y,Excel,Y,,,,N,N,Y,N,N,2,,10.6084/m9.figshare.5472442
-82,RWA,Hull and East Yorkshire Hospitals NHS Trust,Y,Y,Word,N,,,,N,N,N,Y,N,1,,10.6084/m9.figshare.5426704
-211,RWD,United Lincolnshire Hospitals NHS Trust,N,Y,PDF,N,12,No register held,Handwritten declaration at Drug and Therapeutics Committee only,N,,,,,0,,
-218,RWE,University Hospitals Of Leicester NHS Trust,Y,N,PDF,N,,,,N,N,Y,N,N,0,,10.6084/m9.figshare.5773194
-108,RWF,Maidstone and Tunbridge Wells NHS Trust,Y,N,Word,N,40,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5433166
-223,RWG,West Hertfordshire Hospitals NHS Trust,Y,Y,PDF,N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5773227
-56,RWH,East and North Hertfordshire NHS Trust,Y,Y,PDF,N,,,,Y,N,Y,Y,Y,2,,10.6084/m9.figshare.5404948
-187,RWJ,Stockport NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,Y,Y,N,1,,10.6084/m9.figshare.5773089
-60,RWK,East London NHS Foundation Trust,N,N,x,N,,No register held,Claim it is not needed,N,,,,,0,,
-172,RWN,South Essex Partnership University NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5773062
-231,RWP,Worcestershire Acute Hospitals NHS Trust,Y,Y,Embedded text,N,,,,Y,N,Y,Y,Y,0,Y,10.6084/m9.figshare.5773266
-78,RWR,Hertfordshire Partnership University NHS Foundation Trust,Y,N,PDF,N,,,,N,N,N,N,N,0,,10.6084/m9.figshare.5405290
-51,RWV,Devon Partnership NHS Trust,Y,N,Excel,Y,40,,,N,N,N,N,N,0,,10.6084/m9.figshare.5404912
-222,RWW,Warrington and Halton Hospitals NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,1,,10.6084/m9.figshare.5773224
+8,RF4,"Barking, Havering and Redbridge University Hospitals NHS Trust",Y,Y,Excel,Y,,,,N,N,N,Y,N,0,,10.6084/m9.figshare.5404597
+9,RRP,"Barnet, Enfield and Haringey Mental Health NHS Trust",Y,Y,PDF,N,,,,N,Y,N,Y,Y,0,,10.6084/m9.figshare.5404600
+10,RFF,Barnsley Hospital NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5404612
+11,R1H,Barts Health NHS Trust,Y,Y,PDF,N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5404615
+12,RDD,Basildon and Thurrock University Hospitals NHS Foundation Trust,Y,Y,Word,N,40,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5404624
+13,RC1,Bedford Hospital NHS Trust,N,N,x,N,12,Paper only,,N,,,,,0,,
 14,RWX,Berkshire Healthcare NHS Foundation Trust,N,Y,x,N,12,Paper only,,N,,,,,0,,
-28,RWY,Calderdale and Huddersfield NHS Foundation Trust,Y,Y,Word,N,,,,N,Y,N,Y,Y,1,,10.6084/m9.figshare.5404726
-135,RX1,Nottingham University Hospitals NHS Trust,Y,Y,Word,N,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5468890
-191,RX2,Sussex Partnership NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5773101
-195,RX3,"Tees, Esk and Wear Valleys NHS Foundation Trust",Y,N,Embedded text,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5773113
-133,RX4,"Northumberland, Tyne and Wear NHS Foundation Trust",Y,Y,Excel,Y,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5468830
-122,RX6,North East Ambulance Service NHS Foundation Trust,Y,Y,Paper,N,,,"Handwritten forms, scanned in",N,N,Y,N,Y,0,,10.6084/m9.figshare.5468692
-128,RX7,North West Ambulance Service NHS Trust,Y,Y,Word,N,,,,N,N,N,Y,N,0,,10.6084/m9.figshare.5468740
-237,RX8,Yorkshire Ambulance Service NHS Trust,Y,Y,PDF,N,,,,Y,N,Y,N,N,0,,10.6084/m9.figshare.5773326
-61,RX9,East Midlands Ambulance Service NHS Trust,Y,Y,Word,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5405026
-37,RXA,Cheshire and Wirral Partnership NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,Y,N,N,0,,10.6084/m9.figshare.5404789
-63,RXC,East Sussex Healthcare NHS Trust,Y,Y,Word,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5405077
-149,RXE,Rotherham Doncaster and South Humber NHS Foundation Trust,N,N,x,N,,No response,,N,,,,,,,
-114,RXF,Mid Yorkshire Hospitals NHS Trust,Y,N,PDF,N,40,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5433199
-179,RXG,South West Yorkshire Partnership NHS Foundation Trust,N,Y,x,N,12,"Paper only, no entries",,N,,,,,0,,
-25,RXH,Brighton and Sussex University Hospitals NHS Trust,Y,Y,PDF,N,,,,N,N,N,N,Y,1,,10.6084/m9.figshare.5404708
-161,RXK,Sandwell and West Birmingham Hospitals NHS Trust,N,Y,x,N,,Awaited/not currently available,,N,,,,,0,,
-20,RXL,Blackpool Teaching Hospitals NHS Foundation Trust,Y,N,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5404654
-50,RXM,Derbyshire Healthcare NHS Foundation Trust,Y,N,Excel,Y,40,,,N,N,Y,Y,Y,0,Y,10.6084/m9.figshare.5404900
-94,RXN,Lancashire Teaching Hospitals NHS Foundation Trust,Y,Y,PDF,N,,,Individual registers for some departments,N,N,N,N,N,0,Y,10.6084/m9.figshare.5433076
-43,RXP,County Durham and Darlington NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5404807
-26,RXQ,Buckinghamshire Healthcare NHS Trust,Y,N,Word,N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5404714
-59,RXR,East Lancashire Hospitals NHS Trust,Y,Y,PDF,N,,,,N,N,N,N,N,0,,10.6084/m9.figshare.5405005
 15,RXT,Birmingham and Solihull Mental Health NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,Y,Y,N,1,,10.6084/m9.figshare.5404627
-72,RXV,Greater Manchester West Mental Health NHS Foundation Trust,Y,Y,Word,N,,,,N,N,N,Y,N,0,,10.6084/m9.figshare.5405278
-166,RXW,Shrewsbury and Telford Hospital NHS Trust,N,N,x,N,,No response,,N,,,,,,,
-188,RXX,Surrey and Borders Partnership NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5773098
-88,RXY,Kent and Medway NHS and Social Care Partnership Trust,Y,Y,Excel,Y,,,,N,N,N,Y,N,0,,10.6084/m9.figshare.5426728
-102,RY1,Liverpool Community Health NHS Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5433130
-24,RY2,Bridgewater Community Healthcare NHS Foundation Trust,N,N,x,N,,No response,,N,,,,,,,
-119,RY3,Norfolk Community Health and Care NHS Trust,Y,Y,Excel,Y,,,,N,N,N,Y,Y,2,,10.6084/m9.figshare.5468683
-77,RY4,Hertfordshire Community NHS Trust,N,Y,x,N,,No register held,Claim it is not needed,N,,,,,0,,
-100,RY5,Lincolnshire Community Health Services NHS Trust,Y,Y,PDF,N,,,,N,N,Y,Y,Y,3,,10.6084/m9.figshare.5433118
-96,RY6,Leeds Community Healthcare NHS Trust,Y,N,Excel,Y,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5433094
-229,RY7,Wirral Community NHS Foundation Trust,N,Y,x,N,,No entries,,N,,,,,0,,
-49,RY8,Derbyshire Community Health Services NHS Foundation Trust,Y,N,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5404891
-81,RY9,Hounslow and Richmond Community Healthcare NHS Trust,Y,Y,PDF,N,,,,N,N,Y,N,Y,0,,10.6084/m9.figshare.5426698
-225,RYA,West Midlands Ambulance Service NHS Foundation Trust,Y,Y,PDF,N,,,,Y,N,Y,Y,N,0,,10.6084/m9.figshare.5773233
-62,RYC,East Of England Ambulance Service NHS Trust,Y,Y,Excel,Y,,,,N,Y,Y,Y,Y,0,,10.6084/m9.figshare.5405053
-171,RYD,South East Coast Ambulance Service NHS Foundation Trust,N,Y,x,N,40,No entries,,N,,,,,0,,
-170,RYE,South Central Ambulance Service NHS Foundation Trust,N,N,x,N,,No register held,,N,,,,,0,,
-180,RYF,South Western Ambulance Service NHS Foundation Trust,N,Y,x,N,,No register held,,N,,,,,8,,
-44,RYG,Coventry and Warwickshire Partnership NHS Trust,Y,Y,PDF,N,,,,N,N,Y,N,N,0,,10.6084/m9.figshare.5404810
-84,RYJ,Imperial College Healthcare NHS Trust,Y,Y,Excel,Y,,,,N,N,Y,Y,N,0,Y,10.6084/m9.figshare.5426716
-55,RYK,Dudley and Walsall Mental Health Partnership NHS Trust,Y,Y,Word,N,,,,N,Y,N,Y,Y,0,,10.6084/m9.figshare.5404936
-227,RYR,Western Sussex Hospitals NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,N,Y,N,0,,10.6084/m9.figshare.5773239
-31,RYV,Cambridgeshire Community Services NHS Trust,Y,Y,Word,N,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5404747
+16,RQ3,Birmingham Children's Hospital NHS Foundation Trust,N,Y,x,N,,Technical issue,,N,,,,,0,,
 17,RYW,Birmingham Community Healthcare NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5404642
-34,RYX,Central London Community Healthcare NHS Trust,Y,Y,"PDF, Embedded text",N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5404771
-89,RYY,Kent Community Health NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5426734
-22,TAD,Bradford District NHS Foundation Trust,Y,Y,Excel,Y,40,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5404681
-109,TAE,Manchester Mental Health and Social Care Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5433175
-32,TAF,Camden and Islington NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,Y,Y,Y,1,,10.6084/m9.figshare.5404753
-163,TAH,Sheffield Health & Social Care NHS Foundation Trust,Y,N,PDF,N,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5648074
+18,RLU,Birmingham Women's NHS Foundation Trust,N,Y,x,N,,Technical issue,,N,,,,,0,,
 19,TAJ,Black Country Partnership NHS Foundation Trust,N,N,x,N,,No response,,N,,,,,,,
+20,RXL,Blackpool Teaching Hospitals NHS Foundation Trust,Y,N,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5404654
+21,RMC,Bolton NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5404669
+22,TAD,Bradford District Care NHS Foundation Trust,Y,Y,Excel,Y,40,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5404681
+23,RAE,Bradford Teaching Hospitals NHS Foundation Trust,N,N,x,N,,No response,,N,,,,,,,
+24,RY2,Bridgewater Community Healthcare NHS Foundation Trust,N,N,x,N,,No response,,N,,,,,,,
+25,RXH,Brighton and Sussex University Hospitals NHS Trust,Y,Y,PDF,N,,,,N,N,N,N,Y,1,,10.6084/m9.figshare.5404708
+26,RXQ,Buckinghamshire Healthcare NHS Trust,Y,N,Word,N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5404714
+27,RJF,Burton Hospitals NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5404723
+28,RWY,Calderdale and Huddersfield NHS Foundation Trust,Y,Y,Word,N,,,,N,Y,N,Y,Y,1,,10.6084/m9.figshare.5404726
+29,RGT,Cambridge University Hospitals NHS Foundation Trust,Y,Y,Excel,Y,,,,Y,N,N,Y,Y,0,,10.6084/m9.figshare.5404729
+30,RT1,Cambridgeshire and Peterborough NHS Foundation Trust,Y,Y,PDF,N,,,,N,Y,Y,Y,Y,0,,10.6084/m9.figshare.5404732
+31,RYV,Cambridgeshire Community Services NHS Trust,Y,Y,Word,N,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5404747
+32,TAF,Camden and Islington NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,Y,Y,Y,1,,10.6084/m9.figshare.5404753
+33,RV3,Central and North West London NHS Foundation Trust,Y,Y,Embedded text,N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5404756
+34,RYX,Central London Community Healthcare NHS Trust,Y,Y,"PDF, Embedded text",N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5404771
+35,RW3,Central Manchester University Hospitals NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,N,N,0,,10.6084/m9.figshare.5404780
+36,RQM,Chelsea and Westminster Hospital NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,2,,10.6084/m9.figshare.5404783
+37,RXA,Cheshire and Wirral Partnership NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,Y,N,N,0,,10.6084/m9.figshare.5404789
+38,RFS,Chesterfield Royal Hospital NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5404795
+39,RLN,City Hospitals Sunderland NHS Foundation Trust,N,N,x,N,,No response,,N,,,,,,,
+40,RDE,Colchester Hospital University NHS Foundation Trust,N,Y,x,N,,No register held,Sent redacted ABPI,N,,,,,1,Y,
+41,RJ8,Cornwall Partnership NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5404801
+42,RJR,Countess of Chester Hospital NHS Foundation Trust,Y,Y,Word,N,,,,N,N,N,Y,N,0,,10.6084/m9.figshare.5404804
+43,RXP,County Durham and Darlington NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5404807
+44,RYG,Coventry and Warwickshire Partnership NHS Trust,Y,Y,PDF,N,,,,N,N,Y,N,N,0,,10.6084/m9.figshare.5404810
+45,RJ6,Croydon Health Services NHS Trust,Y,Y,Excel,Y,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5404819
+46,RNN,Cumbria Partnership NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5404846
+47,RN7,Dartford and Gravesham NHS Trust,Y,Y,PDF,N,40,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5404861
+48,RTG,Derby Teaching Hospitals NHS Foundation Trust,Y,Y,Excel,Y,40,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5404879
+49,RY8,Derbyshire Community Health Services NHS Foundation Trust,Y,N,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5404891
+50,RXM,Derbyshire Healthcare NHS Foundation Trust,Y,N,Excel,Y,40,,,N,N,Y,Y,Y,0,Y,10.6084/m9.figshare.5404900
+51,RWV,Devon Partnership NHS Trust,Y,N,Excel,Y,40,,,N,N,N,N,N,0,,10.6084/m9.figshare.5404912
+52,RP5,Doncaster and Bassetlaw Hospitals NHS Foundation Trust,Y,Y,Word,N,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5404930
+53,RBD,Dorset County Hospital NHS Foundation Trust,N,N,x,N,,No response,,N,,,,,,,
+54,RDY,Dorset Healthcare University NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,N,N,0,,10.6084/m9.figshare.5404933
+55,RYK,Dudley and Walsall Mental Health Partnership NHS Trust,Y,Y,Word,N,,,,N,Y,N,Y,Y,0,,10.6084/m9.figshare.5404936
+56,RWH,East and North Hertfordshire NHS Trust,Y,Y,PDF,N,,,,Y,N,Y,Y,Y,2,,10.6084/m9.figshare.5404948
+57,RJN,East Cheshire NHS Trust,Y,Y,Embedded text,N,,,,Y,N,N,Y,Y,0,,10.6084/m9.figshare.5404978
+58,RVV,East Kent Hospitals University NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5404981
+59,RXR,East Lancashire Hospitals NHS Trust,Y,Y,PDF,N,,,,N,N,N,N,N,0,,10.6084/m9.figshare.5405005
+60,RWK,East London NHS Foundation Trust,N,N,x,N,,No register held,Claim it is not needed,N,,,,,0,,
+61,RX9,East Midlands Ambulance Service NHS Trust,Y,Y,Word,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5405026
+62,RYC,East of England Ambulance Service NHS Trust,Y,Y,Excel,Y,,,,N,Y,Y,Y,Y,0,,10.6084/m9.figshare.5405053
+63,RXC,East Sussex Healthcare NHS Trust,Y,Y,Word,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5405077
+64,RVR,Epsom and St Helier University Hospitals NHS Trust,N,N,x,N,,No entries,,N,,,,,0,,
+65,RDU,Frimley Health NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5405116
+66,RR7,Gateshead Health NHS Foundation Trust,Y,Y,Word,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5405140
+67,RLT,George Eliot Hospital NHS Trust,Y,Y,Word,N,,,,N,Y,Y,Y,N,0,,10.6084/m9.figshare.5405179
+68,R1J,Gloucestershire Care Services NHS Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,0,Y,10.6084/m9.figshare.5405206
+69,RTE,Gloucestershire Hospitals NHS Foundation Trust,N,N,x,N,,No register held,,N,,,,,,,
+70,RP4,Great Ormond Street Hospital for Children NHS Foundation Trust,Y,Y,PDF,N,,,,Y,N,Y,N,N,1,,10.6084/m9.figshare.5405236
+71,RN3,Great Western Hospitals NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5405269
+72,RXV,Greater Manchester West Mental Health NHS Foundation Trust,Y,Y,Word,N,,,,N,N,N,Y,N,0,,10.6084/m9.figshare.5405278
+73,RJ1,Guy's and St Thomas' NHS Foundation Trust,N,N,x,N,12,No register held,,N,,,,,0,,
+74,RN5,Hampshire Hospitals NHS Foundation Trust,Y,Y,PDF,N,40,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5405284
+75,RCD,Harrogate and District NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5405287
+76,RR1,Heart of England NHS Foundation Trust,N,Y,x,N,,No register held,,N,,,,,0,,
+77,RY4,Hertfordshire Community NHS Trust,N,Y,x,N,,No register held,Claim it is not needed,N,,,,,0,,
+78,RWR,Hertfordshire Partnership University NHS Foundation Trust,Y,N,PDF,N,,,,N,N,N,N,N,0,,10.6084/m9.figshare.5405290
+79,RQQ,Hinchingbrooke Health Care NHS Trust,N,N,x,N,,No register held,,N,,,,,0,,
+80,RQX,Homerton University Hospital NHS Foundation Trust,Y,N,Excel,Y,,,,N,N,N,N,N,0,,10.6084/m9.figshare.5426689
+81,RY9,Hounslow and Richmond Community Healthcare NHS Trust,Y,Y,PDF,N,,,,N,N,Y,N,Y,0,,10.6084/m9.figshare.5426698
+82,RWA,Hull and East Yorkshire Hospitals NHS Trust,Y,Y,Word,N,,,,N,N,N,Y,N,1,,10.6084/m9.figshare.5426704
+83,RV9,Humber NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5426713
+84,RYJ,Imperial College Healthcare NHS Trust,Y,Y,Excel,Y,,,,N,N,Y,Y,N,0,Y,10.6084/m9.figshare.5426716
+85,RGQ,Ipswich Hospital NHS Trust,N,Y,x,N,12,No register held,,N,,,,,0,,
+86,R1F,Isle of Wight NHS Trust,Y,Y,Excel,Y,,,,N,N,N,Y,N,0,Y,10.6084/m9.figshare.5426719
+87,RGP,James Paget University Hospitals NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,N,N,1,,10.6084/m9.figshare.5426722
+88,RXY,Kent and Medway NHS and Social Care Partnership Trust,Y,Y,Excel,Y,,,,N,N,N,Y,N,0,,10.6084/m9.figshare.5426728
+89,RYY,Kent Community Health NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5426734
+90,RNQ,Kettering General Hospital NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5426737
+91,RJZ,King's College Hospital NHS Foundation Trust,N,N,x,N,12,No register held,,N,,,,,0,,
+92,RAX,Kingston Hospital NHS Foundation Trust,Y,N,Excel,Y,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5433043
+93,RW5,Lancashire Care NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5433061
+94,RXN,Lancashire Teaching Hospitals NHS Foundation Trust,Y,Y,PDF,N,,,Individual registers for some departments,N,N,N,N,N,0,Y,10.6084/m9.figshare.5433076
+95,RGD,Leeds and York Partnership NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,N,N,N,0,,10.6084/m9.figshare.5433091
+96,RY6,Leeds Community Healthcare NHS Trust,Y,N,Excel,Y,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5433094
+97,RR8,Leeds Teaching Hospitals NHS Trust,Y,Y,Web page,N,,,http://www.leedsth.nhs.uk/about-us/freedom-of-information/publication-scheme/lists-and-registers/declarations/,Y,N,Y,N,Y,0,,10.6084/m9.figshare.5433097
+98,RT5,Leicestershire Partnership NHS Trust,Y,Y,PDF,N,,,,Y,Y,N,Y,Y,0,,10.6084/m9.figshare.5433112
+99,RJ2,Lewisham and Greenwich NHS Trust,Y,Y,Word,N,,,,N,N,N,Y,Y,1,,10.6084/m9.figshare.5433115
+100,RY5,Lincolnshire Community Health Services NHS Trust,Y,Y,PDF,N,,,,N,N,Y,Y,Y,3,,10.6084/m9.figshare.5433118
+101,RP7,Lincolnshire Partnership NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5433124
+102,RY1,Liverpool Community Health NHS Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5433130
+103,RBQ,Liverpool Heart and Chest Hospital NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,N,N,0,,10.6084/m9.figshare.5433139
+104,REP,Liverpool Women's NHS Foundation Trust,N,N,x,N,,No response,,N,,,,,,,
+105,RRU,London Ambulance Service NHS Trust,Y,Y,PDF,N,,,,N,N,Y,Y,N,0,,10.6084/m9.figshare.5433148
+106,R1K,London North West Healthcare NHS Trust,Y,Y,Word,N,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5433154
+107,RC9,Luton and Dunstable University Hospital NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,Y,Y,N,0,,10.6084/m9.figshare.5433160
+108,RWF,Maidstone and Tunbridge Wells NHS Trust,Y,N,Word,N,40,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5433166
+109,TAE,Manchester Mental Health and Social Care Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5433175
+110,RPA,Medway NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5433178
+111,RW4,Mersey Care NHS Foundation Trust,Y,N,Word,N,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5433181
+112,RBT,Mid Cheshire Hospitals NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5433184
+113,RQ8,Mid Essex Hospital Services NHS Trust,Y,N,Embedded text,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5433187
+114,RXF,Mid Yorkshire Hospitals NHS Trust,Y,N,PDF,N,40,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5433199
+115,RD8,Milton Keynes University Hospital NHS Foundation Trust,Y,Y,"Embedded text, PDF",N,,,,N,N,N,Y,N,0,Y,10.6084/m9.figshare.5433244
+116,RP6,Moorfields Eye Hospital NHS Foundation Trust,Y,Y,Embedded text,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5433259
+117,RM1,Norfolk and Norwich University Hospitals NHS Foundation Trust,N,N,x,N,,No response,,N,,,,,,,
+118,RMY,Norfolk and Suffolk NHS Foundation Trust,Y,N,"PDF, Excel",N,,,,N,Y,N,N,Y,0,,10.6084/m9.figshare.5468674
+119,RY3,Norfolk Community Health and Care NHS Trust,Y,Y,Excel,Y,,,,N,N,N,Y,Y,2,,10.6084/m9.figshare.5468683
+120,RVJ,North Bristol NHS Trust,Y,N,Excel,Y,,,,N,N,Y,Y,N,0,,10.6084/m9.figshare.5468686
+121,RNL,North Cumbria University Hospitals NHS Trust,N,N,x,N,,None given,Sent redacted ABPI,N,,,,,0,Y,
+122,RX6,North East Ambulance Service NHS Foundation Trust,Y,Y,Paper,N,,,"Handwritten forms, scanned in",N,N,Y,N,Y,0,,10.6084/m9.figshare.5468692
+123,RAT,North East London NHS Foundation Trust,Y,N,Excel,Y,,,,N,N,N,Y,N,0,,10.6084/m9.figshare.5468695
+124,RRD,North Essex Partnership University NHS Foundation Trust,Y,N,PDF,N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5468698
+125,RAP,North Middlesex University Hospital NHS Trust,N,Y,x,N,,No register held,Sent redacted ABPI,N,,,,,0,Y,
+126,RLY,North Staffordshire Combined Healthcare NHS Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5468713
+127,RVW,North Tees and Hartlepool NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5468728
+128,RX7,North West Ambulance Service NHS Trust,Y,Y,Word,N,,,,N,N,N,Y,N,0,,10.6084/m9.figshare.5468740
+129,RNS,Northampton General Hospital NHS Trust,Y,Y,PDF,N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5468773
+130,RP1,Northamptonshire Healthcare NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,Y,Y,N,0,,10.6084/m9.figshare.5468803
+131,RBZ,Northern Devon Healthcare NHS Trust,Y,Y,PDF,N,,,,N,N,N,N,N,0,,10.6084/m9.figshare.5468809
+132,RJL,Northern Lincolnshire and Goole NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5468821
+133,RX4,"Northumberland, Tyne and Wear NHS Foundation Trust",Y,Y,Excel,Y,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5468830
+134,RTF,Northumbria Healthcare NHS Foundation Trust,Y,N,Excel,Y,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5468866
+135,RX1,Nottingham University Hospitals NHS Trust,Y,Y,Word,N,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5468890
+136,RHA,Nottinghamshire Healthcare NHS Foundation Trust,Y,Y,PDF,N,,,,Y,N,Y,Y,Y,0,Y,10.6084/m9.figshare.5468929
+137,RNU,Oxford Health NHS Foundation Trust,Y,Y,Word,N,,,,Y,N,Y,Y,Y,0,,10.6084/m9.figshare.5469325
+138,RTH,Oxford University Hospitals NHS Foundation Trust,Y,N,PDF,N,40,,,N,N,N,N,N,0,,10.6084/m9.figshare.5472430
+139,RPG,Oxleas NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,N,N,Y,1,,10.6084/m9.figshare.5472433
+140,RGM,Papworth Hospital NHS Foundation Trust,Y,N,PDF,N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5472436
+141,RW6,Pennine Acute Hospitals NHS Trust,Y,Y,Excel,Y,,,,N,N,Y,N,N,2,,10.6084/m9.figshare.5472442
+142,RT2,Pennine Care NHS Foundation Trust,Y,Y,Embedded text,N,,,,Y,N,N,Y,Y,0,,10.6084/m9.figshare.5472448
+143,RGN,Peterborough and Stamford Hospitals NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5472454
+144,RK9,Plymouth Hospitals NHS Trust,N,N,x,N,,No response,,N,,,,,,,
+145,RD3,Poole Hospital NHS Foundation Trust,N,N,x,N,,No register held,,N,,,,,0,Y,
+146,RHU,Portsmouth Hospitals NHS Trust,Y,Y,Excel,Y,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5472457
+147,RPC,Queen Victoria Hospital NHS Foundation Trust,N,N,x,N,,No response,,N,,,,,,,
+148,RL1,The Robert Jones and Agnes Hunt Orthopaedic Hospital NHS Foundation Trust,Y,N,PDF,N,,,Referred to ABPI then said they weren't bound by 'Sunshine Rules',N,N,N,Y,Y,0,Y,10.6084/m9.figshare.5627275
+149,RXE,Rotherham Doncaster and South Humber NHS Foundation Trust,N,N,x,N,,No response,,N,,,,,,,
+150,RHW,Royal Berkshire NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5627332
+151,RT3,Royal Brompton & Harefield NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,Y,N,Y,0,,10.6084/m9.figshare.5627350
+152,REF,Royal Cornwall Hospitals NHS Trust,Y,Y,Embedded text,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5627353
+153,RH8,Royal Devon and Exeter NHS Foundation Trust,Y,N,Excel,Y,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5648020
+154,RAL,Royal Free London NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5648032
+155,RQ6,Royal Liverpool and Broadgreen University Hospitals NHS Trust,Y,Y,Excel,Y,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5648038
+157,RA2,Royal Surrey County Hospital NHS Foundation Trust,N,N,x,N,12,Paper only,,N,,,,,0,,
+158,RD1,Royal United Hospitals Bath NHS Foundation Trust,Y,Y,PDF,N,40,,,N,N,N,Y,N,0,Y,10.6084/m9.figshare.5648044
+159,RM3,Salford Royal NHS Foundation Trust,Y,Y,PDF,N,,,,Y,N,N,N,N,0,,10.6084/m9.figshare.5648056
+160,RNZ,Salisbury NHS Foundation Trust,Y,N,PDF,N,40,,,N,N,Y,N,Y,0,,10.6084/m9.figshare.5648065
+161,RXK,Sandwell and West Birmingham Hospitals NHS Trust,N,Y,x,N,,Awaited/not currently available,,N,,,,,0,,
+162,RCU,Sheffield Children's NHS Foundation Trust,N,N,x,N,,No response,,N,,,,,,,
+163,TAH,Sheffield Health & Social Care NHS Foundation Trust,Y,N,PDF,N,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5648074
+164,RHQ,Sheffield Teaching Hospitals NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5648083
+165,RK5,Sherwood Forest Hospitals NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5648086
+166,RXW,Shrewsbury and Telford Hospital NHS Trust,N,N,x,N,,No response,,N,,,,,,,
+167,R1D,Shropshire Community Health NHS Trust,Y,Y,Embedded text,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5648089
+168,R1C,Solent NHS Trust,Y,Y,PDF,N,,,,N,N,N,N,N,0,,10.6084/m9.figshare.5648092
+169,RH5,Somerset Partnership NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5773056
+170,RYE,South Central Ambulance Service NHS Foundation Trust,N,N,x,N,,No register held,,N,,,,,0,,
+171,RYD,South East Coast Ambulance Service NHS Foundation Trust,N,Y,x,N,40,No entries,,N,,,,,0,,
+172,RWN,South Essex Partnership University NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5773062
+173,RV5,South London and Maudsley NHS Foundation Trust,Y,Y,Excel,Y,,,,N,Y,N,Y,Y,1,,10.6084/m9.figshare.5773065
+174,RRE,South Staffordshire and Shropshire Healthcare NHS Foundation Trust,Y,Y,Excel,Y,,,No entries,N,Y,N,Y,Y,0,,10.6084/m9.figshare.5773068
+175,RTR,South Tees Hospitals NHS Foundation Trust,N,N,x,N,,No register held,Sent redacted ABPI,N,,,,,0,Y,
+176,RE9,South Tyneside NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,Y,Y,N,0,,10.6084/m9.figshare.5773071
+177,RJC,South Warwickshire NHS Foundation Trust,N,Y,x,N,,No register held,Sent information from ABPI,N,,,,,0,Y,
+178,RQY,South West London and St George's Mental Health NHS Trust,Y,Y,Word,N,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5773074
+179,RXG,South West Yorkshire Partnership NHS Foundation Trust,N,Y,x,N,12,"Paper only, no entries",,N,,,,,0,,
+180,RYF,South Western Ambulance Service NHS Foundation Trust,N,Y,x,N,,No register held,,N,,,,,8,,
+181,RAJ,Southend University Hospital NHS Foundation Trust,N,N,x,N,,No response,,N,,,,,,,
+182,RW1,Southern Health NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5773083
+183,RVY,Southport and Ormskirk Hospital NHS Trust,N,N,x,N,12,Paper only,,N,,,,,0,,
+184,RJ7,St George's University Hospitals NHS Foundation Trust,N,N,x,N,,No register held,,N,,,,,0,,
+185,RBN,St Helens and Knowsley Hospital Services NHS Trust,N,N,x,N,,No response,,N,,,,,,,
+186,R1E,Staffordshire and Stoke on Trent Partnership NHS Trust,Y,Y,PDF,N,,,,N,N,N,N,N,0,,10.6084/m9.figshare.5773086
+187,RWJ,Stockport NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,Y,Y,N,1,,10.6084/m9.figshare.5773089
+188,RXX,Surrey and Borders Partnership NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5773098
+189,RTP,Surrey and Sussex Healthcare NHS Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5773092
+190,RDR,Sussex Community NHS Foundation Trust,N,Y,x,N,12,Paper only,,N,,,,,0,,
+191,RX2,Sussex Partnership NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5773101
+192,RMP,Tameside Hospital NHS Foundation Trust,Y,N,Embedded text,N,,,Originally sent link to the ABPI,N,N,N,N,Y,0,Y,10.6084/m9.figshare.5773104
+193,RBA,Taunton and Somerset NHS Foundation Trust,Y,Y,"Embedded text, Excel",N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5773107
+194,RNK,Tavistock and Portman NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5773110
+195,RX3,"Tees, Esk and Wear Valleys NHS Foundation Trust",Y,N,Embedded text,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5773113
+196,RBV,The Christie NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,N,Y,Y,1,,10.6084/m9.figshare.5773116
+197,REN,The Clatterbridge Cancer Centre NHS Foundation Trust,Y,Y,Word,N,,,,N,N,Y,Y,N,0,,10.6084/m9.figshare.5773119
+198,RNA,The Dudley Group NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5773122
+199,RAS,The Hillingdon Hospitals NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5773128
+200,RTD,The Newcastle Upon Tyne Hospitals NHS Foundation Trust,Y,N,Word,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5773137
+201,RQW,The Princess Alexandra Hospital NHS Trust,N,Y,x,N,,No entries,,N,,,,,2,,
+202,RCX,"The Queen Elizabeth Hospital, King's LYNN, NHS Foundation Trust",Y,N,Word,N,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5773140
+203,RFR,The Rotherham NHS Foundation Trust,Y,Y,Embedded text,N,,,,Y,N,N,Y,Y,0,,10.6084/m9.figshare.5773146
+204,RDZ,The Royal Bournemouth and Christchurch Hospitals NHS Foundation Trust,Y,N,PDF,N,,,Does not cover all staff - only band 8a and above,N,N,N,Y,Y,2,,10.6084/m9.figshare.5773149
+205,RPY,The Royal Marsden NHS Foundation Trust,N,Y,x,N,,No register held,Referred direct to ABPI,N,,,,,1,Y,
+206,RRJ,The Royal Orthopaedic Hospital NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5773155
+207,RL4,The Royal Wolverhampton NHS Trust,Y,N,PDF,N,,,,N,N,N,N,N,0,,10.6084/m9.figshare.5773158
+208,RET,The Walton Centre NHS Foundation Trust,Y,Y,PDF,N,,,,Y,N,N,Y,Y,0,,10.6084/m9.figshare.5773161
+209,RKE,The Whittington Hospital NHS Trust,Y,Y,PDF,N,,,Scanned paper forms,N,N,N,Y,Y,0,,10.6084/m9.figshare.5773164
+210,RA9,Torbay and South Devon NHS Foundation Trust,Y,N,PDF,N,,,,N,N,N,Y,Y,1,,10.6084/m9.figshare.5773167
+211,RWD,United Lincolnshire Hospitals NHS Trust,N,Y,PDF,N,12,No register held,Handwritten declaration at Drug and Therapeutics Committee only,N,,,,,0,,
+212,RRV,University College London Hospitals NHS Foundation Trust,Y,N,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5773170
+213,RRK,University Hospitals Birmingham NHS Foundation Trust,N,N,x,N,,No register held,Claim it is not needed,N,,,,,0,,
+214,RM2,University Hospital of South Manchester NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5773179
+215,RHM,University Hospital Southampton NHS Foundation Trust,Y,N,PDF,N,,,Latest (6th December),N,N,Y,N,Y,0,,10.6084/m9.figshare.5773188
+216,RA7,University Hospitals Bristol NHS Foundation Trust,Y,N,"PDF, Excel",N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5773191
+217,RKB,University Hospitals Coventry and Warwickshire NHS Trust,N,N,x,N,,No response,,N,,,,,,,
+218,RWE,University Hospitals of Leicester NHS Trust,Y,N,PDF,N,,,,N,N,Y,N,N,0,,10.6084/m9.figshare.5773194
+219,RTX,University Hospitals of Morecambe Bay NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5773200
+220,RJE,University Hospitals of North Midlands NHS Trust,Y,Y,Excel,Y,,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5773206
+221,RBK,Walsall Healthcare NHS Trust,Y,Y,PDF,N,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5773221
+222,RWW,Warrington and Halton Hospitals NHS Foundation Trust,Y,Y,PDF,N,,,,N,N,N,Y,Y,1,,10.6084/m9.figshare.5773224
+223,RWG,West Hertfordshire Hospitals NHS Trust,Y,Y,PDF,N,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5773227
+224,RKL,West London Mental Health NHS Trust,Y,N,PDF,N,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5773230
+225,RYA,West Midlands Ambulance Service NHS Foundation Trust,Y,Y,PDF,N,,,,Y,N,Y,Y,N,0,,10.6084/m9.figshare.5773233
+226,RGR,West Suffolk NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,Y,Y,Y,0,,10.6084/m9.figshare.5773236
+227,RYR,Western Sussex Hospitals NHS Foundation Trust,Y,Y,Excel,Y,,,,N,N,N,Y,N,0,,10.6084/m9.figshare.5773239
+228,RA3,Weston Area Health NHS Trust,Y,Y,Word,N,,,,N,N,N,N,N,0,,10.6084/m9.figshare.5773257
+229,RY7,Wirral Community NHS Foundation Trust,N,Y,x,N,,No entries,,N,,,,,0,,
+230,RBL,Wirral University Teaching Hospital NHS Foundation Trust,N,N,x,N,,No response,,N,,,,,,,
+231,RWP,Worcestershire Acute Hospitals NHS Trust,Y,Y,Embedded text,N,,,,Y,N,Y,Y,Y,0,Y,10.6084/m9.figshare.5773266
+232,R1A,Worcestershire Health and Care NHS Trust,Y,Y,Excel,Y,,,,N,N,N,N,Y,0,,10.6084/m9.figshare.5773278
+233,RRF,"Wrightington, Wigan and Leigh NHS Foundation Trust",Y,N,Word,N,,,,N,N,N,Y,Y,0,Y,10.6084/m9.figshare.5773290
+234,RLQ,Wye Valley NHS Trust,Y,Y,Excel,Y,,,,N,N,Y,Y,N,0,,10.6084/m9.figshare.5773305
+235,RA4,Yeovil District Hospital NHS Foundation Trust,N,N,x,N,,No response,,N,,,,,,,
+236,RCB,York Teaching Hospital NHS Foundation Trust,Y,N,Excel,Y,40,,,N,N,N,Y,Y,0,,10.6084/m9.figshare.5773314
+237,RX8,Yorkshire Ambulance Service NHS Trust,Y,Y,PDF,N,,,,Y,N,Y,N,N,0,,10.6084/m9.figshare.5773326

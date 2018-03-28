@@ -24,6 +24,19 @@ module Jekyll
           scores['publically_accessible'].to_i,
           scores['reusable_format'].to_i
         ].reduce(:+) * 20
+        case self.data['scores']['percentage']
+        when 80..100
+          probability = 'likely'
+        when 60..79
+          probability = 'somewhat likely'
+        when 40..59
+          probability = 'unlikely'
+        when 20..39
+          probability = 'very unlikely'
+        else
+          probability = 'impossible'
+        end
+        self.data['scores']['probability'] = probability
       end
       self.data['raw_data_questions'] = site.data['hospitality-coi-questions'][0]
     end
