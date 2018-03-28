@@ -30,6 +30,13 @@ SCORES_SOURCE = (
     'QGHtzVN0j5QDQgYhnRzxSOdkj2Pe_QXNp7KJOHXMM61iJ5-pjZbDE'
     'Jle1T3CBvtq7CnECVjO0N/pub?gid=1987633112&single=true&output=csv')
 
+# Names and addresses
+TRUSTS_SOURCE = (
+    'https://docs.google.com/spreadsheets/d/e/2PACX-1vSNGB'
+    'QGHtzVN0j5QDQgYhnRzxSOdkj2Pe_QXNp7KJOHXMM61iJ5-pjZbDE'
+    'Jle1T3CBvtq7CnECVjO0N/pub?gid=503751107&single=true&output=csv')
+
+
 def nhs_abbreviations(word, **kwargs):
     if len(word) == 2 and word.lower() not in [
             'at', 'of', 'in', 'on', 'to', 'is', 'me', 'by', 'dr', 'st']:
@@ -52,55 +59,31 @@ def nhs_titlecase(words):
     return words
 
 
-def convert_trusts_csv():
-    from io import BytesIO
-    import zipfile
-    urls = [
-        ('https://digital.nhs.uk/media/352/etr/zip/etr', 'etr.csv'),
-        ('https://digital.nhs.uk/media/349/ect/zip/ect', 'ect.csv')]
-    with open('./_data/trusts.csv', 'w') as csvfile:
-        writer = csv.writer(csvfile)
-        writer.writerow(
-            ['org_code', 'name', 'addr1', 'addr2', 'addr3',
-             'city', 'county', 'postcode']
-        )
-        for url, filename in urls:
-            response = requests.get(url)
-            csvzip = zipfile.ZipFile(
-                BytesIO(response.content)
-            )
-            csvfile = csvzip.open(filename, 'r')
-            reader = csv.reader([x.decode('utf8') for x in csvfile.readlines()], delimiter=',')
-            for row in reader:
-                writer.writerow(
-                    [
-                        row[0],
-                        nhs_titlecase(row[1]),
-                        nhs_titlecase(row[4]),
-                        nhs_titlecase(row[5]),
-                        nhs_titlecase(row[6]),
-                        nhs_titlecase(row[7]),
-                        nhs_titlecase(row[8]),
-                        row[9]
-                    ])
-
-def main():
-    """Download raw data, convert it into two spreadsheets for consumption
-    by the Jekyll app
-
-    """
-    convert_trusts_csv()
-    # Get the raw answers
-    download = requests.get(RAW_SOURCE)
+def write_to_csv(sheets_url, dest_csv_path):
+    download = requests.get(sheets_url)
     content = download.content
     reader = csv.reader([x.decode('utf8') for x in content.splitlines()], delimiter=',')
     fieldnames = [x.lower().replace(' ', '_').replace('?', '')
                   for x in next(reader)]
-    with open('./_data/hospitality-coi-raw.csv', 'w') as csvfile:
+    with open(dest_csv_path, 'w') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(fieldnames)
         for row in reader:
             writer.writerow(row)
+
+
+def main():
+    """Download data from Google Sheets, convert it into three
+    spreadsheets for consumption by the Jekyll app
+
+    """
+
+    # Get the raw answers
+    write_to_csv(RAW_SOURCE, './_data/hospitality-coi-raw.csv')
+
+    # Get the trust names and addresses
+    write_to_csv(TRUSTS_SOURCE, './_data/trusts.csv')
+
     # Get the scores
     download = requests.get(SCORES_SOURCE)
     content = download.content
