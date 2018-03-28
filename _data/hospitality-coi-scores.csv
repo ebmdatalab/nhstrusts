@@ -76,7 +76,7 @@ rank,org_code,trust_name,responded_on_time,sent_a_register,complete_data_structu
 =72,RVN,Avon and Wiltshire Mental Health Partnership NHS Trust,1,1,0,0,0,2,,3,,57,171
 =72,RRP,"Barnet, Enfield and Haringey Mental Health NHS Trust",1,1,0,0,0,2,,5,,0,0
 =72,RFF,Barnsley Hospital NHS Foundation Trust,1,1,0,0,0,2,,,,,
-=72,R1H,Barts Health NHS Trust,1,1,0,0,0,2,,,,236,449
+=72,R1H,Barts Health NHS Trust,1,1,0,0,0,2,,,,#REF!,#REF!
 =72,RDD,Basildon and Thurrock University Hospitals NHS Foundation Trust,1,1,0,0,0,2,,,,,
 =72,RXH,Brighton and Sussex University Hospitals NHS Trust,1,1,0,0,0,2,,,,,
 =72,RWY,Calderdale and Huddersfield NHS Foundation Trust,1,1,0,0,0,2,,,,,
@@ -138,7 +138,7 @@ rank,org_code,trust_name,responded_on_time,sent_a_register,complete_data_structu
 =72,REF,Royal Cornwall Hospitals NHS Trust,1,1,0,0,0,2,,,,,
 =72,RAL,Royal Free London NHS Foundation Trust,1,1,0,0,0,2,,,,,
 =72,RD1,Royal United Hospitals Bath NHS Foundation Trust,1,1,0,0,0,2,,,,,
-=72,TAH,Sheffield Health and Social Care NHS Foundation Trust,0,1,1,0,0,2,,,,,
+=72,TAH,Sheffield Health & Social Care NHS Foundation Trust,0,1,1,0,0,2,,,,,
 =72,RHQ,Sheffield Teaching Hospitals NHS Foundation Trust,1,1,0,0,0,2,,,,,
 =72,R1D,Shropshire Community Health NHS Trust,1,1,0,0,0,2,,,,,
 =72,R1C,Solent NHS Trust,1,1,0,0,0,2,,,,,
@@ -162,8 +162,8 @@ rank,org_code,trust_name,responded_on_time,sent_a_register,complete_data_structu
 =72,RCB,York Teaching Hospital NHS Foundation Trust,0,1,0,0,1,2,,,,,
 =162,RWX,Berkshire Healthcare NHS Foundation Trust,1,0,0,0,0,1,,,,,
 =162,RQ3,Birmingham Children's Hospital NHS Foundation Trust,1,0,0,0,0,1,,,,,
-=162,RLU,Birmingham Women's NHS Foundation Trust,1,0,0,0,0,1,,,,165,69.92%
-=162,RXL,Blackpool Teaching Hospitals NHS Foundation Trust,0,1,0,0,0,1,,,,31,13.14%
+=162,RLU,Birmingham Women's NHS Foundation Trust,1,0,0,0,0,1,,,,114,48.31%
+=162,RXL,Blackpool Teaching Hospitals NHS Foundation Trust,0,1,0,0,0,1,,,,9,3.81%
 =162,RXQ,Buckinghamshire Healthcare NHS Trust,0,1,0,0,0,1,,,,,
 =162,RDE,Colchester Hospital University NHS Foundation Trust,1,0,0,0,0,1,,,,,
 =162,RY8,Derbyshire Community Health Services NHS Foundation Trust,0,1,0,0,0,1,,,,,
@@ -203,8 +203,8 @@ rank,org_code,trust_name,responded_on_time,sent_a_register,complete_data_structu
 =162,RY7,Wirral Community NHS Foundation Trust,1,0,0,0,0,1,,,,,
 =162,RRF,"Wrightington, Wigan and Leigh NHS Foundation Trust",0,1,0,0,0,1,,,,,
 =204,REM,Aintree University Hospital NHS Foundation Trust,0,0,0,0,0,0,,,,,
-=204,RC1,Bedford Hospital NHS Trust,0,0,0,0,0,0,,,,1.902542373,
-=204,TAJ,Black Country Partnership NHS Foundation Trust,0,0,0,0,0,0,,,,185,78.39%
+=204,RC1,Bedford Hospital NHS Trust,0,0,0,0,0,0,,,,#DIV/0!,
+=204,TAJ,Black Country Partnership NHS Foundation Trust,0,0,0,0,0,0,,,,15,6.36%
 =204,RAE,Bradford Teaching Hospitals NHS Foundation Trust,0,0,0,0,0,0,,,,,
 =204,RY2,Bridgewater Community Healthcare NHS Foundation Trust,0,0,0,0,0,0,,,,,
 =204,RLN,City Hospitals Sunderland NHS Foundation Trust,0,0,0,0,0,0,,,,,
