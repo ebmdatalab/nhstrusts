@@ -90,18 +90,7 @@ layout: default
 
         <p class="intro">
           {{ page.trust['name'] }} achieved a transparency score of {{ page.scores['percentage'] }}%. This placed them {{ page.scores['rank'] }} within all Trusts in England. </p>
-        <p>Based on this score it is <strong>
-          {% if page.scores['percentage'] >= 80 %}
-            likely
-          {% else if page.scores['percentage'] >= 60 %}
-            somewhat likely
-          {% else if page.scores['percentage'] >= 40 %}
-            unlikely
-          {% else if page.scores['percentage'] >= 20 %}
-            very unlikely
-          {% else page.scores['percentage'] >= 80 %}
-            impossible
-          {% endif %} </strong> you could find out about potential conflicts of interest held by the people who are treating you.
+        <p>Based on this score it is <strong>{{ page.scores.probability }}</strong> you could find out about potential conflicts of interest held by the people who are treating you.
         </p>
       </div>
 
