@@ -12,6 +12,7 @@ markdown: "kramdown"
 # it'll find stuff from the Jekyll gem and try to built that too
 exclude: [
   "deploy",
+  "vendor",
   "Gemfile",
   "Gemfile.lock",
   "README.md",
