@@ -1,1 +1,20 @@
-conf/general.yml
+# Site settings
+title: "TheyCareForYou COI Index"
+email: "hello@ebmdatalab.net"
+description: ""
+baseurl: ""
+url: "https://coi.theycareforyou.org/"
+
+# Build settings
+markdown: "kramdown"
+
+# Tell Jekyll to ignore the vendor directory where we put gems, otherwise
+# it'll find stuff from the Jekyll gem and try to built that too
+exclude: [
+  "deploy",
+  "vendor",
+  "Gemfile",
+  "Gemfile.lock",
+  "README.md",
+  "requirements.txt",
+]
