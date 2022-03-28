@@ -12,8 +12,8 @@ We think NHS Trusts should collect simple complete data on conflicts of interest
 
 ## About the people
 
-This study was conducted by Dr. Harriet Feldman with input and assistance from Nicholas DeVito, Dr. Jonathan Mendel and Dr. David Carroll. The website was created by Seb Bacon. Dr. Ben Goldacre was the project PI. The [EBM DataLab](https://ebmdatalab.net) at the University of Oxford is a collaboration of academics, clinicians and software engineers working together to make tools as well as academic papers.
+This study was conducted by Dr. Harriet Feldman with input and assistance from Nicholas DeVito, Dr. Jonathan Mendel and Dr. David Carroll. The website was created by Seb Bacon. Dr. Ben Goldacre was the project PI. The [Bennett Institute for Applied Data Science](https://www.bennett.ox.ac.uk/) at the University of Oxford is a collaboration of academics, clinicians and software engineers working together to make tools as well as academic papers.
 
 ## Contact
 
-We're always keen to hear feedback, user stories, insights you’ve made, errors, omissions, and feature requests. If you have anything to say about this project, please email us at [hello@ebmdatalab.net](mailto:hello@ebmdatalab.net)! If you are an NHS trust featured on this website, and you wish to update your score, please send your new current register to [hello@ebmdatalab.net](mailto:hello@ebmdatalab.net), with a link to where it can be found online.
+We're always keen to hear feedback, user stories, insights you’ve made, errors, omissions, and feature requests. If you have anything to say about this project, please email us at [ebmdatalab@phc.ox.ac.uk](mailto:ebmdatalab@phc.ox.ac.uk)! If you are an NHS trust featured on this website, and you wish to update your score, please send your new current register to [ebmdatalab@phc.ox.ac.uk](mailto:ebmdatalab@phc.ox.ac.uk), with a link to where it can be found online.

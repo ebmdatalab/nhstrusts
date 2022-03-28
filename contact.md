@@ -4,4 +4,4 @@ title: Contact
 permalink: /contact/
 ---
 
-We're always keen to hear feedback, user stories, insights you’ve made, errors, omissions, and feature requests. If you have anything to say about this project, please email us at [hello@ebmdatalab.net](mailto:hello@ebmdatalab.net)! If you are an NHS trust featured on this website, and you wish to update your score, please send your new current register to [hello@ebmdatalab.net](mailto:hello@ebmdatalab.net), with a link to where it can be found online.
+We're always keen to hear feedback, user stories, insights you’ve made, errors, omissions, and feature requests. If you have anything to say about this project, please email us at [ebmdatalab@phc.ox.ac.uk](mailto:ebmdatalab@phc.ox.ac.uk)! If you are an NHS trust featured on this website, and you wish to update your score, please send your new current register to [ebmdatalab@phc.ox.ac.uk](mailto:ebmdatalab@phc.ox.ac.uk), with a link to where it can be found online.
