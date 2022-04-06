@@ -15,3 +15,16 @@ The script `generate_data.py` does the following:
 The two trust worksheets are joined by the "org code" column which must be consistent between them and the `trusts.csv` file. The questions worksheet is joined by the respective column headings.
 
 Jekyll generates static pages by running the plugin code at `_plugins/trusts.rb`, which iterates over the contents of the three CSVs described above.
+
+## Docker commands
+
+```sh
+# Build the site
+docker compose up build
+
+# Remove the built site (for a clean rebuild)
+docker compose up clean
+
+# Run a local development server
+docker compose up dev
+```
