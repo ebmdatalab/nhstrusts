@@ -362,6 +362,10 @@ tfoot {
   }
   .search-block__text-input {
     color: #fff;
+
+    &::placeholder {
+      color: #fff;
+    }
   }
   .search-block__submit {
     background-image: url('../assets/images/search-icon--dark.svg');
@@ -502,3 +506,7 @@ tfoot {
 @import 'company';
 @import 'graphs';
 @import 'home';
+
+.d-flex {
+  display: flex;
+}
