@@ -78,7 +78,8 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     ref (2.0.0)
-    rexml (3.2.5)
+    rexml (3.3.3)
+      strscan
     rouge (3.28.0)
     ruby2_keywords (0.0.5)
     safe_yaml (1.0.5)
@@ -87,6 +88,7 @@ GEM
     sawyer (0.8.2)
       addressable (>= 2.3.5)
       faraday (> 0.8, < 2.0)
+    strscan (3.1.0)
     terminal-table (2.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     therubyracer (0.12.3)
@@ -95,6 +97,7 @@ GEM
     unicode-display_width (1.8.0)
 
 PLATFORMS
+  x86_64-linux
   x86_64-linux-musl
 
 DEPENDENCIES
